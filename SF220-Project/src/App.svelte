@@ -1,9 +1,6 @@
 <script>
-  // @ts-ignore
   import logo from './assets/logo.png'
-  // @ts-ignore
   import userid from './assets/userid.png'
-  // @ts-ignore
   import password from './assets/password.png'
 </script>
 
