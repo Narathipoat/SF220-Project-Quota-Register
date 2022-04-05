@@ -51,7 +51,7 @@
     </button>
 
     <!-- Forgot password -->
-    <button id="forgot">forgot password?</button>
+    <button id="forget">forget password?</button>
   </div>
 </main>
 
@@ -206,7 +206,7 @@
   }
 
   /* Forgot password */
-  #forgot {
+  #forget {
     position: absolute;
     width: 212px;
     height: 30px;

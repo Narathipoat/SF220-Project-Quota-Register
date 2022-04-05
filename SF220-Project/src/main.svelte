@@ -1,22 +1,26 @@
 <script>
     import logo from './assets/logo.png'
-    import { accounts, account } from './data.js';
+    import { accounts, account, mode, islogin } from './data.js';
+    function logout() {
+        $islogin = false;
+        $mode = '';
+    }
 </script>
 
 <main>
     <div class="side-bar">
         <img src={logo} alt="logo" id="logo">
         <hr id="line">
-        <button id="search">ค้นหารายวิชา</button>
-        <button id="quota">ผลการขอโควตา</button>
-        <button id="payment">ชำระเงิน</button>
-        <button id="logout">ออกจากระบบ</button>
+        <button id="search" on:click={()=>$mode = 'search'}>ค้นหารายวิชา</button>
+        <button id="quota" on:click={() =>$mode = 'quota'}>ผลการขอโควตา</button>
+        <button id="payment" on:click={() =>$mode = 'payment'}>ชำระเงิน</button>
+        <button id="logout" on:click={logout}>ออกจากระบบ</button>
     </div>
     <div>
         <h1 id="university">Thammasat University</h1>
         <h3 id="welcome">ยินดีต้อนรับเข้าสู่ระบบ</h3>
         <hr id="line2">
-        <span id="name">Mr. {$accounts[$account].name} : {$accounts[$account].userid}</span>
+        <span id="name">คุณ {$accounts[$account].name} : {$accounts[$account].userid}</span>
     </div>
 </main>
 
@@ -102,7 +106,7 @@
 
         font-family: 'Mulish';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 96px;
         line-height: 120px;
         align-items: center;
@@ -120,7 +124,7 @@
 
         font-family: 'Mulish';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 96px;
         line-height: 120px;
         align-items: center;
