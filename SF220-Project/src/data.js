@@ -5,7 +5,7 @@ let data = {'6410742412' : {name : 'นราธิป เจริญสุข'
             '6410742453' : {name : 'พัทธ์ธีรา คาร', userid : '6410742453', password : '1234'},
             '6410742693' : {name : 'ยงยุทธ พรพงศ์สวัสดิ์', userid : '6410742693', password : '1234'},
             '6410742735' : {name : 'วสวัตติ์ ชีพสมุทร์', userid : '6410742735', password : '1234'},}
-let s = ['SF220', 'TU107', 'SF230', 'TU109', 'SF210s'].sort()
+let s = ['SF220', 'TU107', 'SF230', 'TU109', 'SF210'].sort()
 
 export const accounts = writable(data);
 export const n = writable(s);

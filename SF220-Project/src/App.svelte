@@ -1,7 +1,5 @@
 <script>
-    // @ts-ignore
     import Login from './login.svelte'
-    // @ts-ignore
     import { islogin, mode } from './data.js'
     import Main from './main.svelte'
     import Search from './search.svelte'

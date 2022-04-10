@@ -64,7 +64,6 @@
         height: 1080px;
         left: 0px;
         top: 0px;
-
         background: #DC0B00;
     }
     #logo {
@@ -80,7 +79,6 @@
         height: 0px;
         left: 0px;
         top: 240px;
-
         border: 3px solid #FFFFFF;
     }
     #search {
@@ -89,7 +87,6 @@
         height: 50px;
         left: 42px;
         top: 280px;
-
         border: #FFFFFF;
         background: #FFFFFF;
         border-radius: 31.5px;
@@ -100,7 +97,6 @@
         height: 50px;
         left: 42px;
         top: 365px;
-
         border: #FFFFFF;
         background: #FFFFFF;
         border-radius: 31.5px;
@@ -111,7 +107,6 @@
         height: 50px;
         left: 42px;
         top: 450px;
-
         background: #FFFFFF;
         border: #FFFFFF;
         border-radius: 31.5px;
@@ -122,12 +117,10 @@
         height: 50px;
         left: 42px;
         top: 981px;
-
         border: #FFFFFF;
         background: #FFFFFF;
         border-radius: 31.5px;
     }
-
     /* Top content */
     .top-content h1 {
         position: absolute;
@@ -135,14 +128,12 @@
         height: 160px;
         left: 438px;
         top: 0px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
         font-size: 96px;
         line-height: 120px;
         align-items: center;
-
         color: #FF0000;
     }
     .top-content h3 {
@@ -151,17 +142,14 @@
         height: 120px;
         left: 438px;
         top: 80px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 600;
         font-size: 72px;
         line-height: 120px;
         align-items: center;
-
         color: #245564;;
     }
-
     /* Main content */
     .main-content {
         position: absolute;
@@ -169,7 +157,6 @@
         height: 743.35px;
         left: 438px;
         top: 312.95px;
-
         background: rgba(245, 245, 245, 0.75);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
@@ -177,56 +164,48 @@
     }
     #item1 {
         padding-left: 30px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
     #item2 {
         padding-left: 205px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
     #item3 {
         padding-left: 210px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
     #item4 {
         padding-left: 210px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
     #item5 {
         padding-left: 30px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
     #item6 {
         padding-left: 210px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
     #item7 {
         padding-left: 210px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
     #item8 {
         padding-left: 210px;
-
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
@@ -243,13 +222,11 @@
     }
     #total1 {
         padding-left: 200px;
-
         font-size: 'Mulish';
         font-weight: 400;
     }
     #total2 {
         padding-left: 210px;
-
         font-size: 'Mulish';
         font-weight: 400;
     }
