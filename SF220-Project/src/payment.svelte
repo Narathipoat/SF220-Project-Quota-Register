@@ -1,5 +1,6 @@
 <script>
     import logo from './assets/logo.png'
+    import qr from './assets/qrcode.jpg'
     import { mode, islogin, n } from './data.js';
     import { sub } from './subject.js';
     function logout() {
@@ -43,7 +44,7 @@
                 {/if}
            </h1>
        {/each}
-       <hr id="line2">
+        <hr id="line2">
         <h1>
             <span id="item1"><b>รวม</b></span>
             <span id="total-credit"><b>Credit:</b> {c}</span>
@@ -53,6 +54,18 @@
                 <span id="total2">{String(total)[0]},{String(total).slice(1)} BAHT</span>
             {/if}
         </h1>
+        {#if $n.length == 1}
+            <img src={qr} alt="qrcode" id="qrcode-1">
+        {:else if $n.length == 2}
+            <img src={qr} alt="qrcode" id="qrcode-2">
+        {:else if $n.length == 3}
+            <img src={qr} alt="qrcode" id="qrcode-3">
+        {:else if $n.length == 4}
+            <img src={qr} alt="qrcode" id="qrcode-4">
+        {:else if $n.length == 5}
+            <img src={qr} alt="qrcode" id="qrcode-5">
+        {/if}
+        
     </div>
 </main>
 
@@ -229,5 +242,41 @@
         padding-left: 210px;
         font-size: 'Mulish';
         font-weight: 400;
+    }
+    /* qr code */
+    #qrcode-1 {
+        position: absolute;
+        width: 276px;
+        height: 220px;
+        left: 500px;
+        top: 320px;
+    }
+    #qrcode-2 {
+        position: absolute;
+        width: 276px;
+        height: 220px;
+        left: 500px;
+        top: 360px;
+    }
+    #qrcode-3 {
+        position: absolute;
+        width: 276px;
+        height: 220px;
+        left: 500px;
+        top: 400px;
+    }
+    #qrcode-4 {
+        position: absolute;
+        width: 276px;
+        height: 220px;
+        left: 500px;
+        top: 440px;
+    }
+    #qrcode-5 {
+        position: absolute;
+        width: 276px;
+        height: 220px;
+        left: 500px;
+        top: 480px;
     }
 </style>
