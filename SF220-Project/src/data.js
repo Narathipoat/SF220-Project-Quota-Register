@@ -12,4 +12,3 @@ export const n = writable(s);
 export const islogin = writable(false); 
 export const mode = writable('');
 export const account = writable('');
-// , 'TU107', 'SF230', 'TU109', 'SF210'
