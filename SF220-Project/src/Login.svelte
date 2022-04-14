@@ -129,7 +129,7 @@
   }
   #id-area[type="text"] {
     font-size: 20px;
-    text-align: center;
+    padding-left: 30px;    
   }
   #id-area::-webkit-input-placeholder {
     position: absolute;
@@ -167,7 +167,7 @@
   }
   #password-area[type="password"] {
     font-size: 20px;
-    text-align: center;
+    padding-left: 30px;
   }
   #password-area::-webkit-input-placeholder {
     position: absolute;
@@ -179,7 +179,6 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    align-items: center;
 
     color: #241C1C;
   }

@@ -1,8 +1,9 @@
 <script>
     import logo from './assets/logo.png'
     import searchlogo from './assets/search.png'
+    import plus from './assets/plus.png'
     import { accounts, account, mode, islogin, n } from './data.js'
-    import {vicha} from './listSJ.js';
+    import { vicha, name_subject} from './listSJ.js';
     
     function logout() {
         $islogin = false;
@@ -10,14 +11,16 @@
     }
 
 // Choose Subject
-    let Search = '';
+    let searchSJ = '';
     let chooseSJ = '';
-    function searchdata() { 
-      // {#each $vicha as check}
-      // {#if {check.name} == Search}
-      // {chooseSJ} = {check}
+    let check = false;
+    function checkSJ (){
+        $name_subject.push(searchSJ)
+        check = true;
     }
-  
+    function remove_item (node) {
+        $name_subject.shift()
+    }
 </script>
 
 
@@ -37,20 +40,51 @@
 
 <!-- Search -->
     <div class="search-bg">
-      
-    <input type="text" placeholder="Search" id="search-area"  bind:value={Search}>
-      
-    <img src={searchlogo} alt="search-logo" id="search-logo"
-      on:click={searchdata}>
-      
+        <input type="text" placeholder="Search" id="search-area"  bind:value={searchSJ}>
+        <img src={searchlogo} alt="search-logo" id="search-logo" on:click={checkSJ}>
+        {#if check == true}
+            <div class="subject">
+                {#each $name_subject as name_sub}
+                    {#if name_sub == "SF210"}
+                        <div id="sec">
+                            <h1>{$vicha[name_sub].sec1} 
+                                <span>{$vicha[name_sub].num_student}/{$vicha[name_sub].max_student}
+                                    <img src={plus} alt="plus" id="plus">
+                                </span>
+                            </h1>
+                        </div>
+                        <div id="detail">
+                            <span id="day">Day: {$vicha[name_sub].day}
+                                <span id="prof">{$vicha[name_sub].prof}</span>
+                            </span>
+                            <br>
+                            <span id="time">Time: {$vicha[name_sub].time1}
+                                <span id="credit">Credit: {$vicha[name_sub].credit}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <br>
+                        <div id="sec">
+                            <h1>{$vicha[name_sub].sec2} 
+                                <span>{$vicha[name_sub].num_student}/{$vicha[name_sub].max_student}
+                                    <img src={plus} alt="plus" id="plus">
+                                </span>
+                            </h1>
+                        </div>
+                        <div id="detail">
+                            <span id="day">Day: {$vicha[name_sub].day}
+                                <span id="prof">{$vicha[name_sub].prof}</span>
+                            </span>
+                            <br>
+                            <span id="time">Time: {$vicha[name_sub].time2}
+                                <span id="credit" use:remove_item>Credit: {$vicha[name_sub].credit}</span>
+                            </span>
+                        </div>
+                    {/if}
+                {/each}
+            </div>
+        {/if}
     </div>
-  
-<!--     <div class="choose">
-      section {chooseSJ.sec}
-      <br>วัน: {chooseSJ.day}     อาจารย์ผู้สอน: {chooseSJ.prof}
-      <br>เวลา: {chooseSJ.time}  หน่วยกิต: {chooseSJ.credit}
-    </div> -->
-  
 </main>
 
 
@@ -129,39 +163,31 @@
 <!--     /* Content in Web page */ -->
     #university {
         position: absolute;
-        width: 1019px;
-        height: 465px;
-        left: 450px;
-        top: 50px;
-
+        width: 1095px;
+        height: 160px;
+        left: 438px;
+        top: 0px;
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
         font-size: 96px;
         line-height: 120px;
         align-items: center;
-
         color: #FF0000;
-
-        mix-blend-mode: normal;
     }
     #subject {
         position: absolute;
-        width: 1019px;
-        height: 465px;
-        left: 450px;
-        top: 160px;
-
+        width: 1095px;
+        height: 120px;
+        left: 438px;
+        top: 80px;
         font-family: 'Mulish';
         font-style: normal;
-        font-weight: 400;
-        font-size: 96px;
+        font-weight: 600;
+        font-size: 72px;
         line-height: 120px;
         align-items: center;
-
         color: #245564;
-
-        mix-blend-mode: normal;
     }
 
     /* Search */
@@ -171,7 +197,7 @@
       width: 1500px;
       height: 119.05px;
       left: 412.76px;
-      top: 400px;
+      top: 300px;
 
       background: rgba(255, 92, 92, 0.75);
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -183,7 +209,7 @@
       position: absolute;
       width: 1364px;
       height: 72px;
-      left: 20px;
+      left: 12px;
       top: 20px;
 
       background: #FFFFFF;
@@ -195,16 +221,101 @@
       font-weight: 400;
       font-size: 30px;
       line-height: 30px;
-      align-items: center;
-      left: 100px
+    }
+    #search-area[type="text"] {
+        padding-left: 20px;
     }
 
     #search-logo {
       position: absolute;
       width: 86px;
       height: 72px;
-      left: 1400px;
+      left: 1410px;
       top: 24px;
     }
-  
+    .subject {
+        margin-top: 150px;
+    }
+    #sec {
+        width: 1500px;
+        height: 69px;
+        left: 12px;
+        top: 500px;
+        border: 2px solid rgba(255, 92, 92, 0.75);
+        border-radius: 10px;
+        background: rgba(255, 92, 92, 0.75);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    #sec h1{
+        margin-top: 0%;
+        padding-left: 20px;
+        font-weight: 300;
+    }
+    #sec h1 span {
+        margin-left: 70%;
+    }
+    #plus {
+        width: 44px;
+        height: 48px;
+        margin-left: 5%;
+        
+    }
+    #detail {
+        width: 1500px;
+        height: 151.14px;
+        left: 12px;
+        top: 510px;
+
+        background: rgba(255, 242, 242, 0.75);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px
+    }
+    #day {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        padding-left: 20px;
+
+        color: #000000;
+
+        mix-blend-mode: normal;
+    }
+    #prof {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        margin-left: 20%;
+
+        color: #000000;
+
+        mix-blend-mode: normal;
+    }
+    #time {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        padding-left: 20px;
+
+        color: #000000;
+
+        mix-blend-mode: normal;
+    }
+    #credit {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 45px;
+        margin-left: 6%;
+
+        color: #000000;
+
+        mix-blend-mode: normal;
+    }
 </style>

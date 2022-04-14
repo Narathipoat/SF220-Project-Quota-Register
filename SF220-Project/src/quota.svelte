@@ -3,16 +3,15 @@
     import qr from './assets/qrcode.jpg'
     import { mode, islogin, n } from './data.js';
     import { sub } from './subject.js';
+    import { vicha } from './listSJ.js'
     function logout() {
         $islogin = false;
         $mode = '';
     }
-    let c = 0;
-    let total = 0;
-    function calculate(node) {
-        c += 3;
-        total += 5400;
-    }
+    function ccl(){ 
+  console.log('+1');
+}
+  
 </script>
 
 <main>
@@ -30,19 +29,24 @@
     </div>
     <div class="main-content">
        {#each $n as name}
-           <h1>
-               {#if ($sub[name].name) == 'TU107' || ($sub[name].name) == 'TU109'}
-                    <span id='item1'>{$sub[name].name}</span>
-                    <span id='item2'>{$sub[name].sec}</span>
-                    <span id='item3' use:calculate><b>Credit:</b> {$sub[name].credit}</span>
-<!--           จะแก้เป็น function + -          <span id='item4'>{$sub[name].cost}</span> -->
-                {:else}
-                    <span id='item5'>{$sub[name].name}</span>
-                    <span id='item6'>{$sub[name].sec}</span>
-                    <span id='item7' use:calculate><b>Credit:</b> {$sub[name].credit}</span>
-<!--                     <span id='item8'>{$sub[name].cost}</span> -->
-                {/if}
-           </h1>
+            <div class="background">
+                <h1>
+                    {#if ($sub[name].name) == 'TU107' || ($sub[name].name) == 'TU109'}
+                         <span id='item1'>{$sub[name].name}</span>
+                         <span id='item2'>{$sub[name].sec}</span>
+                         <span id='item3'><b>Credit:</b> {$sub[name].credit} </span>
+                         <span id='item4'> {$vicha[name].num_student} / {$vicha[name].max_student}</span>
+
+                         <button id="cancel"><span>ยกเลิก</span></button>
+                     {:else}
+                         <span id='item5'>{$sub[name].name}</span>
+                         <span id='item6'>{$sub[name].sec}</span>
+                         <span id='item7'><b>Credit:</b> {$sub[name].credit} </span>
+                         <span id='item8'> {$vicha[name].num_student} / {$vicha[name].max_student}</span>
+                         <button id="cancel" on:click={ccl}><span>ยกเลิก</span></button>
+                     {/if}
+                </h1>
+            </div>
        {/each}
       <button id="payment2" on:click={() =>$mode = 'payment'}>ยืนยันและชำระเงิน</button>
     </div>
@@ -54,7 +58,8 @@
     .side-bar {
         position: absolute;
         width: 384px;
-        height: 1080px;
+        height: 1080px;  /* fixไว้*/
+    /*    height: 100vh;  ยืดได้*/
         left: 0px;
         top: 0px;
         background: #DC0B00;
@@ -141,7 +146,7 @@
         font-size: 72px;
         line-height: 120px;
         align-items: center;
-        color: #245564;;
+        color: #245564;
     }
     /* Main content */
     .main-content {
@@ -150,10 +155,7 @@
         height: 73.35px;
         left: 438px;
         top: 312.95px;
-        background: rgba(245, 245, 245, 0.75);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        transform: rotate(-0.12deg);
+        
     }
     #item1 {
         padding-left: 30px;
@@ -174,7 +176,7 @@
         font-weight: 400;
     }
     #item4 {
-        padding-left: 210px;
+        padding-left: 170px;
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
@@ -198,34 +200,52 @@
         font-weight: 400;
     }
     #item8 {
-        padding-left: 210px;
+        padding-left: 170px;
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;
     }
-    #line2 {
-        margin-top: 100px;
-        border: 2px solid black;
+    .background {
+        border: 2px none rgba(245, 245, 245, 0.75);
+        margin-bottom: 20px;
+        width: 1311.65px;
+        height: 73.35px;
+        left: 438px;
+        top: 312.95px;
+        background: rgba(245, 245, 245, 0.75);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transform: rotate(-0.12deg);
+    }
+    .background h1{
+        padding-top: 20px;
+    }
+    #cancel {
+        position: absolute;
+        width: 120px;
+        height: 40px;
+        left: 1180px;
+        padding-top: 5px;
+
+        background: #000000;
+        border: #000000;
+        border-radius: 31.5px;
+    }
+    #cancel:hover {
+        background-color: #A50000;
+    }
+    #cancel span {
+        color: #fff;
     }
     #payment2 {
         position: absolute;
         width: 300px;
         height: 50px;
-        left: 42px;
+        left: 500px;
         top: 671px;
-        color: #fff000;
-        border: #1eff00;
-        background: #00ff33;
+        color: #fff;
+        border: #30B900;
+        background: #30B900;
         border-radius: 31.5px;
     }
-/*   #logout {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 981px;
-        border: #FFFFFF;
-        background: #FFFFFF;
-        border-radius: 31.5px;
-    } */
 </style>    
