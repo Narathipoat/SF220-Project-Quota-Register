@@ -3,6 +3,7 @@
     import qr from './assets/qrcode.jpg'
     import { mode, islogin, n } from './data.js';
     import { sub } from './subject.js';
+    import { vicha, list_subject } from './listSJ.js';
     function logout() {
         $islogin = false;
         $mode = '';
@@ -29,18 +30,28 @@
         <h3>ชำระเงิน</h3>
     </div>
     <div class="main-content">
-       {#each $n as name}
+       {#each $list_subject as name}
            <h1>
-               {#if ($sub[name].name) == 'TU107' || ($sub[name].name) == 'TU109'}
-                    <span id='item1'>{$sub[name].name}</span>
-                    <span id='item2'>{$sub[name].sec}</span>
-                    <span id='item3' use:calculate><b>Credit:</b> {$sub[name].credit}</span>
-                    <span id='item4'>{$sub[name].cost}</span>
+               {#if ($vicha[name].name) == 'TU107' || ($vicha[name].name) == 'TU109'}
+                    <span id='item1'>{$vicha[name].name}</span>
+                    <span id='item2'>{$vicha[name].sec}</span>
+                    <span id='item3' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
+                    <span id='item4'>{$vicha[name].cost}</span>
+                {:else if name == 'SF210'}
+                    <span id='item1'>{$vicha[name].name}</span>
+                    <span id='item9'>{$vicha[name].sec1}</span>
+                    <span id='item3' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
+                    <span id='item4'>{$vicha[name].cost}</span>
+                {:else if name == 'SF210_2'}
+                    <span id='item1'>{$vicha[name].name}</span>
+                    <span id='item9'>{$vicha[name].sec2}</span>
+                    <span id='item3' use:calculate><b>Credit:</b> {$vicha["SF210"].credit}</span>
+                    <span id='item4'>{$vicha["SF210"].cost}</span>
                 {:else}
-                    <span id='item5'>{$sub[name].name}</span>
-                    <span id='item6'>{$sub[name].sec}</span>
-                    <span id='item7' use:calculate><b>Credit:</b> {$sub[name].credit}</span>
-                    <span id='item8'>{$sub[name].cost}</span>
+                    <span id='item5'>{$vicha[name].name}</span>
+                    <span id='item6'>{$vicha[name].sec}</span>
+                    <span id='item7' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
+                    <span id='item8'>{$vicha[name].cost}</span>
                 {/if}
            </h1>
        {/each}
@@ -50,19 +61,21 @@
             <span id="total-credit"><b>Credit:</b> {c}</span>
             {#if total >= 10000}
                 <span id="total1">{String(total).slice(0, 2)},{String(total).slice(2)} BAHT</span>
-            {:else}
+            {:else if total >= 5400 && total < 10000}
                 <span id="total2">{String(total)[0]},{String(total).slice(1)} BAHT</span>
+            {:else}
+                <span id="total2">{String(total)[0]} BAHT</span>
             {/if}
         </h1>
-        {#if $n.length == 1}
+        {#if $list_subject.length == 1}
             <img src={qr} alt="qrcode" id="qrcode-1">
-        {:else if $n.length == 2}
+        {:else if $list_subject.length == 2}
             <img src={qr} alt="qrcode" id="qrcode-2">
-        {:else if $n.length == 3}
+        {:else if $list_subject.length == 3}
             <img src={qr} alt="qrcode" id="qrcode-3">
-        {:else if $n.length == 4}
+        {:else if $list_subject.length == 4}
             <img src={qr} alt="qrcode" id="qrcode-4">
-        {:else if $n.length == 5}
+        {:else if $list_subject.length == 5}
             <img src={qr} alt="qrcode" id="qrcode-5">
         {/if}
         
@@ -219,6 +232,12 @@
     }
     #item8 {
         padding-left: 210px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+    }
+    #item9 {
+        padding-left: 211px;
         font-family: 'Mulish';
         font-style: normal;
         font-weight: 400;

@@ -1,17 +1,35 @@
 <script>
     import logo from './assets/logo.png'
-    import qr from './assets/qrcode.jpg'
-    import { mode, islogin, n } from './data.js';
-    import { sub } from './subject.js';
-    import { vicha } from './listSJ.js'
+    import { mode, islogin} from './data.js';
+    import { vicha, list_subject} from './listSJ.js'
+    import { Today, Final } from './date.js'
     function logout() {
         $islogin = false;
         $mode = '';
     }
-    function ccl(){ 
-  console.log('+1');
-}
-  
+    function remove_item (name){
+        const index = $list_subject.indexOf(name);
+        if (index > -1) {
+            $list_subject.splice(index, 1);
+        }
+        $vicha[name].num_student += 1;
+    }
+    function remove_item_sec1 (name){
+        const index = $list_subject.indexOf(name);
+        if (index > -1) {
+            $list_subject.splice(index, 1);
+        }
+        $vicha["SF210"].num_student1 += 1;
+    }
+    function remove_item_sec2 (name){
+        const index = $list_subject.indexOf(name);
+        if (index > -1) {
+            $list_subject.splice(index, 1);
+        }
+        $vicha["SF210"].num_student2 += 1;
+    }
+    let today = $Today.getDate();
+    let final = $Final.getDate();
 </script>
 
 <main>
@@ -28,27 +46,70 @@
         <h3>ผลการขอโควตา</h3>
     </div>
     <div class="main-content">
-       {#each $n as name}
-            <div class="background">
-                <h1>
-                    {#if ($sub[name].name) == 'TU107' || ($sub[name].name) == 'TU109'}
-                         <span id='item1'>{$sub[name].name}</span>
-                         <span id='item2'>{$sub[name].sec}</span>
-                         <span id='item3'><b>Credit:</b> {$sub[name].credit} </span>
-                         <span id='item4'> {$vicha[name].num_student} / {$vicha[name].max_student}</span>
-
-                         <button id="cancel"><span>ยกเลิก</span></button>
-                     {:else}
-                         <span id='item5'>{$sub[name].name}</span>
-                         <span id='item6'>{$sub[name].sec}</span>
-                         <span id='item7'><b>Credit:</b> {$sub[name].credit} </span>
-                         <span id='item8'> {$vicha[name].num_student} / {$vicha[name].max_student}</span>
-                         <button id="cancel" on:click={ccl}><span>ยกเลิก</span></button>
-                     {/if}
-                </h1>
-            </div>
-       {/each}
-      <button id="payment2" on:click={() =>$mode = 'payment'}>ยืนยันและชำระเงิน</button>
+        {#if $list_subject.length > 0}
+            {#if final < today}
+                {#each $list_subject as name}
+                    <div class="background">
+                        <h1>
+                            {#if ($vicha[name].name) == 'TU107' || ($vicha[name].name) == 'TU109'}
+                                <span id='item1'>{$vicha[name].name}</span>
+                                <span id='item2'>{$vicha[name].sec}</span>
+                                <span id='item3'><b>Credit:</b> {$vicha[name].credit} </span>
+                                <span id='item4'> {$vicha[name].num_student}/{$vicha[name].max_student}</span>
+                                <button id="cancel" on:click={() => {remove_item(name)}}><span>ยกเลิก</span></button>
+                            {:else if name == 'SF210'}
+                                <span id='item5'>{$vicha[name].name}</span>
+                                <span id='item6'>{$vicha[name].sec1}</span>
+                                <span id='item7'><b>Credit:</b> {$vicha[name].credit} </span>
+                                <span id='item8'> {$vicha[name].num_student1}/{$vicha[name].max_student}</span>
+                                <button id="cancel" on:click={() => {remove_item_sec1(name)}}><span>ยกเลิก</span></button>
+                            {:else if name == 'SF210_2'}
+                                <span id='item5'>{$vicha[name].name}</span>
+                                <span id='item6'>{$vicha[name].sec2}</span>
+                                <span id='item7'><b>Credit:</b> {$vicha["SF210"].credit} </span>
+                                <span id='item8'> {$vicha["SF210"].num_student2}/{$vicha["SF210"].max_student}</span>
+                                <button id="cancel" on:click={() => {remove_item_sec2(name)}}><span>ยกเลิก</span></button>
+                            {:else}
+                                <span id='item5'>{$vicha[name].name}</span>
+                                <span id='item6'>{$vicha[name].sec}</span>
+                                <span id='item7'><b>Credit:</b> {$vicha[name].credit} </span>
+                                <span id='item8'> {$vicha[name].num_student}/{$vicha[name].max_student}</span>
+                                <button id="cancel" on:click={() => {remove_item(name)}}><span>ยกเลิก</span></button>
+                            {/if}
+                        </h1>
+                    </div>
+                {/each}
+            {:else}
+                {#each $list_subject as name}
+                    <div class="background">
+                        <h1>
+                            {#if ($vicha[name].name) == 'TU107' || ($vicha[name].name) == 'TU109'}
+                                <span id='item1'>{$vicha[name].name}</span>
+                                <span id='item2'>{$vicha[name].sec}</span>
+                                <span id='item3'><b>Credit:</b> {$vicha[name].credit} </span>
+                                <span id='item4'> {$vicha[name].num_student}/{$vicha[name].max_student}</span>
+                            {:else if name == 'SF210'}
+                                <span id='item5'>{$vicha[name].name}</span>
+                                <span id='item6'>{$vicha[name].sec1}</span>
+                                <span id='item7'><b>Credit:</b> {$vicha[name].credit} </span>
+                                <span id='item8'> {$vicha[name].num_student1}/{$vicha[name].max_student}</span>
+                            {:else if name == 'SF210_2'}
+                                <span id='item5'>{$vicha[name].name}</span>
+                                <span id='item6'>{$vicha[name].sec2}</span>
+                                <span id='item7'><b>Credit:</b> {$vicha["SF210"].credit} </span>
+                                <span id='item8'> {$vicha["SF210"].num_student2}/{$vicha["SF210"].max_student}</span>
+                            {:else}
+                                <span id='item5'>{$vicha[name].name}</span>
+                                <span id='item6'>{$vicha[name].sec}</span>
+                                <span id='item7'><b>Credit:</b> {$vicha[name].credit} </span>
+                                <span id='item8'> {$vicha[name].num_student}/{$vicha[name].max_student}</span>
+                            {/if}
+                        </h1>
+                    </div>
+                {/each}
+            {/if}
+            <button id="payment2" on:click={() =>$mode = 'payment'}>ยืนยันและชำระเงิน</button>
+        {/if}
     </div>
   
 </main>

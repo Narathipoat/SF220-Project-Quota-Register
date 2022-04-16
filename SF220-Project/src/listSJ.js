@@ -5,18 +5,22 @@ let subject = {
            sec2 : 'Section 760002', 
            prof : 'Assoc. Prof. Dr. Weerachai Anotaipaiboon',
            day : 'Tue' ,
-           time1 : '09. 30 - 12. 30 น.',
-           time2 : '13. 30 - 16. 30 น.',
+           time1 : '09.30 - 12.30 น.',
+           time2 : '13.30 - 16.30 น.',
            credit : '3', 
            cost : '5,400 BAHT', 
-           num_student : '21', 
+           num_student1 : '21', 
+           num_student2 : '21',
            max_student : '30'},
+  SF210_2 : {name : 'SF210',
+            sec2 : 'Section 760002'
+            },
   
   SF220 : {name : 'SF220', 
            sec : 'Section 760001', 
            prof : 'Assoc. Prof. Dr. Weerachai Anotaipaiboon',
            day : 'Mon', 
-           time : '09. 30 - 12. 30 น.', 
+           time : '09.30 - 12.30 น.', 
            credit : '3', 
            cost : '5,400 BAHT', 
            num_student : '22', 
@@ -26,7 +30,7 @@ let subject = {
            sec : 'Section 760001', 
            prof : 'Assoc. Prof. Dr. Weerachai Anotaipaiboon',
            day : 'Wed', 
-           time : '13. 30 - 16. 30 น.', 
+           time : '13.30 - 16.30 น.', 
            credit : '3', 
            cost : '5,400 BAHT', 
            num_student : '23', 
@@ -36,7 +40,7 @@ let subject = {
            sec : 'Section 760001', 
            prof : 'Assoc. Prof. Dr. Weerachai Anotaipaiboon',
            day : 'Thu', 
-           time : '13. 30 - 16. 30 น.', 
+           time : '13.30 - 16.30 น.', 
            credit : '3', 
            cost : '5,400 BAHT', 
            num_student : '17', 
@@ -46,14 +50,14 @@ let subject = {
            sec : 'Section 760001', 
            prof : 'T. Thanapath Cheeranawanith',
            day : 'Thu', 
-           time : '09. 30 - 12. 30', 
+           time : '09.30 - 12.30', 
            credit : '3', 
            cost : '5,400 BAHT', 
            num_student : '19', 
            max_student : '63'}
 }
 
-let name_sub = []
+let select_subject = []
 
 export const vicha = writable(subject);
-export const name_subject = writable(name_sub);
+export const list_subject = writable(select_subject);
