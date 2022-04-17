@@ -2,6 +2,7 @@
     import logo from './assets/logo.png'
     import { accounts, account, mode, islogin } from './data.js';
     import { time } from './time.js';
+    import './style/main_style.css'
     function logout() {
         $islogin = false;
         $mode = '';

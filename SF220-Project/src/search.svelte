@@ -827,7 +827,7 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 45px;
-        margin-left: 20%;
+        margin-left: 19%;
 
         color: #000000;
 
@@ -839,7 +839,7 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 45px;
-        margin-left: 19.2%;
+        margin-left: 18%;
 
         color: #000000;
 
@@ -851,7 +851,7 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 45px;
-        margin-left: 19.3%;
+        margin-left: 18.3%;
 
         color: #000000;
 
@@ -863,7 +863,7 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 45px;
-        margin-left: 19.9%;
+        margin-left: 18.7%;
 
         color: #000000;
 
@@ -875,7 +875,7 @@
         font-weight: 400;
         font-size: 25px;
         line-height: 45px;
-        margin-left: 17.2%;
+        margin-left: 16%;
 
         color: #000000;
 
@@ -1151,7 +1151,7 @@
         font-weight: 400;
         font-size: 36px;
         line-height: 45px;
-        margin-left: 20%;
+        margin-left: 19%;
 
         color: #000000;
 
@@ -1163,7 +1163,7 @@
         font-weight: 400;
         font-size: 36px;
         line-height: 45px;
-        margin-left: 19.2%;
+        margin-left: 18%;
 
         color: #000000;
 
@@ -1175,7 +1175,7 @@
         font-weight: 400;
         font-size: 36px;
         line-height: 45px;
-        margin-left: 19.3%;
+        margin-left: 18.3%;
 
         color: #000000;
 
@@ -1187,7 +1187,7 @@
         font-weight: 400;
         font-size: 36px;
         line-height: 45px;
-        margin-left: 19.9%;
+        margin-left: 18.7%;
 
         color: #000000;
 
@@ -1199,7 +1199,7 @@
         font-weight: 400;
         font-size: 36px;
         line-height: 45px;
-        margin-left: 17.2%;
+        margin-left: 16%;
 
         color: #000000;
 
