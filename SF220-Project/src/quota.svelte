@@ -3,6 +3,8 @@
     import { mode, islogin} from './data.js';
     import { vicha, list_subject} from './listSJ.js'
     import { Today, Final } from './date.js'
+    import { time } from './time.js';
+    import './style/quota_style.css'
     function logout() {
         $islogin = false;
         $mode = '';
@@ -30,6 +32,13 @@
     }
     let today = $Today.getDate();
     let final = $Final.getDate();
+
+    const formatter = new Intl.DateTimeFormat('en', {
+		  hour12: true,
+		  hour: 'numeric',
+		  minute: '2-digit',
+		  second: '2-digit'
+	  });
 </script>
 
 <main>
@@ -40,12 +49,13 @@
         <button id="quota" on:click={() =>$mode = 'quota'}>ผลการขอโควตา</button>
         <button id="payment" on:click={() =>$mode = 'payment'}>ชำระเงิน</button>
         <button id="logout" on:click={logout}>ออกจากระบบ</button>
+        <span id = "time-bar">{formatter.format($time)}</span>
     </div>
     <div class="top-content">
         <h1>Thammasat University</h1>
         <h3>ผลการขอโควตา</h3>
     </div>
-    <div class="main-content">
+    <div class="Main-content">
         {#if $list_subject.length > 0}
             {#if final < today}
                 {#each $list_subject as name}
@@ -115,198 +125,24 @@
 </main>
 
 <style>
-    /* Side bar */
-    .side-bar {
-        position: absolute;
-        width: 384px;
-        height: 1080px;  /* fixไว้*/
-    /*    height: 100vh;  ยืดได้*/
-        left: 0px;
-        top: 0px;
-        background: #DC0B00;
+    @media screen and (max-width:2560px) {
+        /* Main content */
+        .Main-content {
+            position: absolute;
+            width: 1100px;
+            height: 78px;
+            left: 350px;
+            top: 312.95px;
+        }
     }
-    #logo {
-        position: absolute;
-        width: 180px;
-        height: 185.61px;
-        left: 89px;
-        top: 26px
-    }
-    #line1 {
-        position: absolute;
-        width: 384px;
-        height: 0px;
-        left: 0px;
-        top: 240px;
-        border: 3px solid #FFFFFF;
-    }
-    #search {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 280px;
-        border: #FFFFFF;
-        background: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    #quota {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 365px;
-        border: #FFFFFF;
-        background: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    #payment {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 450px;
-        background: #FFFFFF;
-        border: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    #logout {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 981px;
-        border: #FFFFFF;
-        background: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    /* Top content */
-    .top-content h1 {
-        position: absolute;
-        width: 1095px;
-        height: 160px;
-        left: 438px;
-        top: 0px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 96px;
-        line-height: 120px;
-        align-items: center;
-        color: #FF0000;
-    }
-    .top-content h3 {
-        position: absolute;
-        width: 1095px;
-        height: 120px;
-        left: 438px;
-        top: 80px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 72px;
-        line-height: 120px;
-        align-items: center;
-        color: #245564;
-    }
-    /* Main content */
-    .main-content {
-        position: absolute;
-        width: 1311.65px;
-        height: 73.35px;
-        left: 438px;
-        top: 312.95px;
-        
-    }
-    #item1 {
-        padding-left: 30px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item2 {
-        padding-left: 205px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item3 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item4 {
-        padding-left: 170px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item5 {
-        padding-left: 30px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item6 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item7 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item8 {
-        padding-left: 170px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    .background {
-        border: 2px none rgba(245, 245, 245, 0.75);
-        margin-bottom: 20px;
-        width: 1311.65px;
-        height: 73.35px;
-        left: 438px;
-        top: 312.95px;
-        background: rgba(245, 245, 245, 0.75);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        transform: rotate(-0.12deg);
-    }
-    .background h1{
-        padding-top: 20px;
-    }
-    #cancel {
-        position: absolute;
-        width: 120px;
-        height: 40px;
-        left: 1180px;
-        padding-top: 5px;
-
-        background: #000000;
-        border: #000000;
-        border-radius: 31.5px;
-    }
-    #cancel:hover {
-        background-color: #A50000;
-    }
-    #cancel span {
-        color: #fff;
-    }
-    #payment2 {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 500px;
-        top: 671px;
-        color: #fff;
-        border: #30B900;
-        background: #30B900;
-        border-radius: 31.5px;
+    @media screen and (min-width:1920px) and (max-width:2500px) {
+        /* Main content */
+        .Main-content {
+            position: absolute;
+            width: 1311.65px;
+            height: 73.35px;
+            left: 438px;
+            top: 312.95px;
+        }
     }
 </style>    

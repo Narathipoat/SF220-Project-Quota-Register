@@ -9,7 +9,7 @@ let subject = {
            time2 : '13.30 - 16.30 น.',
            credit : '3', 
            cost : '5,400 BAHT', 
-           num_student1 : '21', 
+           num_student1 : '1', 
            num_student2 : '21',
            max_student : '30'},
   SF210_2 : {name : 'SF210',
@@ -23,8 +23,8 @@ let subject = {
            time : '09.30 - 12.30 น.', 
            credit : '3', 
            cost : '5,400 BAHT', 
-           num_student : '22', 
-           max_student : '30'},
+           num_student : '0', 
+           max_student : '77'},
  
   SF230 : {name : 'SF230', 
            sec : 'Section 760001', 
@@ -34,7 +34,7 @@ let subject = {
            credit : '3', 
            cost : '5,400 BAHT', 
            num_student : '23', 
-           max_student : '30'},
+           max_student : '86'},
   
   TU107 : {name : 'TU107', 
            sec : 'Section 760001', 

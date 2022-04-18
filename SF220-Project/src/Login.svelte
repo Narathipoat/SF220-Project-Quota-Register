@@ -54,3 +54,27 @@
     <button id="forget">forget password?</button>
   </div>
 </main>
+
+<style>
+  @media screen and (max-width:2560px) {
+    /* Logo */
+    #logo {
+      position: absolute;
+      width: 180px;
+      height: 185.61px;
+      margin-left: 10%;
+      margin-top: -12.5px;
+    }
+
+  }
+@media screen and (min-width:1920px) and (max-width:2500px) and (max-height:1200px){
+    /* Logo */
+    #logo {
+      position: absolute;
+      width: 180px;
+      height: 185.61px;
+      margin-left: 16.5%;
+      margin-top: -12.5px;
+    }
+  }
+</style>

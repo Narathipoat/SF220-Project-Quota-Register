@@ -32,19 +32,31 @@
         before = 'sec';
     }
     function select_SF210_sec1 () {
+        if ($vicha[chooseSJ].num_student1 == 0) {
+            alert("ไม่สามารถขอโควตาได้")
+        } else {
         $vicha[chooseSJ].num_student1 -= 1;
         $list_subject.push(chooseSJ)
         before1 = 'sec-after';
+        }
     }
     function select_SF210_sec2 () {
+        if ($vicha[chooseSJ].num_student2 == 0) {
+            alert("ไม่สามารถขอโควตาได้")
+        } else {
         $vicha[chooseSJ].num_student2 -= 1;
         $list_subject.push(sf210_2)
         before2 = 'sec-after';
+        }
     }
     function select_subject () {
+        if ($vicha[chooseSJ].num_student == 0) {
+            alert("ไม่สามารถขอโควตาได้")
+        } else {
         $vicha[chooseSJ].num_student -= 1;
         $list_subject.push(chooseSJ)
         before = 'sec-after';
+        }
     }
     const formatter = new Intl.DateTimeFormat('en', {
 		  hour12: true,

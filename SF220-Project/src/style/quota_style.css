@@ -1,0 +1,459 @@
+@media screen and (max-width:2560px) {
+
+    /* Side bar */
+    .side-bar {
+        position: absolute;
+        width   : 300px;
+        height  : 1080px;
+        left    : 0px;
+        top     : 0px;
+
+        background: #DC0B00;
+    }
+
+    #logo {
+        position: absolute;
+        width   : 180px;
+        height  : 185.61px;
+        left    : 60px;
+        top     : 30px;
+    }
+
+    #line1 {
+        position: absolute;
+        width   : 300px;
+        height  : 0px;
+        left    : 0px;
+        top     : 240px;
+
+        border: 2px solid #FFFFFF;
+    }
+
+    #search {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 290px;
+        font-size: 17px;
+
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #quota {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 365px;
+        font-size: 17px;
+
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #payment {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 440px;
+        font-size: 17px;
+
+        background   : #FFFFFF;
+        border       : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #logout {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 981px;
+        font-size: 17px;
+
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    /* Top content */
+    .top-content h1 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 160px;
+        left       : 350px;
+        top        : 0px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 400;
+        font-size  : 96px;
+        line-height: 120px;
+        align-items: center;
+        color      : #FF0000;
+    }
+
+    .top-content h3 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 120px;
+        left       : 350px;
+        top        : 80px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 600;
+        font-size  : 72px;
+        line-height: 120px;
+        align-items: center;
+        color      : #245564;
+    }
+
+    /* Main content */
+    .Main-content {
+        position: absolute;
+        width   : 1100px;
+        height  : 78px;
+        left    : 350px;
+        top     : 312.95px;
+    }
+
+    #item1 {
+        padding-left: 30px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #item2 {
+        padding-left: 205px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #item3 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #item4 {
+        padding-left: 90px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #item5 {
+        padding-left: 30px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #item6 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #item7 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #item8 {
+        padding-left: 90px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    .background {
+        border       : 2px none rgba(245, 245, 245, 0.75);
+        margin-bottom: 20px;
+        width        : 1100px;
+        height       : 73.35px;
+        left         : 438px;
+        top          : 312.95px;
+        background   : rgba(245, 245, 245, 0.75);
+        box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transform    : rotate(-0.12deg);
+    }
+
+    .background h1 {
+        padding-top: 20px;
+    }
+
+    #cancel {
+        position   : absolute;
+        width      : 120px;
+        height     : 40px;
+        left       : 960px;
+        padding-top: 5px;
+
+        background   : #000000;
+        border       : #000000;
+        border-radius: 31.5px;
+    }
+
+    #cancel:hover {
+        background-color: #A50000;
+    }
+
+    #cancel span {
+        color: #fff;
+    }
+
+    #payment2 {
+        position     : absolute;
+        width        : 200px;
+        height       : 50px;
+        left         : 450px;
+        top          : 671px;
+        color        : #fff;
+        border       : #30B900;
+        background   : #30B900;
+        border-radius: 31.5px;
+        font-size    : 17px;
+    }
+
+    #time-bar {
+        position: absolute;
+        width   : 300px;
+        height  : 50px;
+        left    : 70px;
+        top     : 930px;
+
+        font-size: 30px;
+        color    : #fff000;
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width:2500px) {
+
+    /* Side bar */
+    .side-bar {
+        position  : absolute;
+        width     : 384px;
+        height    : 1080px;
+        left      : 0px;
+        top       : 0px;
+        background: #DC0B00;
+    }
+
+    #logo {
+        position: absolute;
+        width   : 180px;
+        height  : 185.61px;
+        left    : 89px;
+        top     : 26px
+    }
+
+    #line1 {
+        position: absolute;
+        width   : 384px;
+        height  : 0px;
+        left    : 0px;
+        top     : 240px;
+        border  : 3px solid #FFFFFF;
+    }
+
+    #search {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 280px;
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #quota {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 365px;
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #payment {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 450px;
+        background   : #FFFFFF;
+        border       : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #logout {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 981px;
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    /* Top content */
+    .top-content h1 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 160px;
+        left       : 438px;
+        top        : 0px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 400;
+        font-size  : 96px;
+        line-height: 120px;
+        align-items: center;
+        color      : #FF0000;
+    }
+
+    .top-content h3 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 120px;
+        left       : 438px;
+        top        : 80px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 600;
+        font-size  : 72px;
+        line-height: 120px;
+        align-items: center;
+        color      : #245564;
+    }
+
+    /* Main content */
+    #item1 {
+        padding-left: 30px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item2 {
+        padding-left: 205px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item3 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item4 {
+        padding-left: 170px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item5 {
+        padding-left: 30px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item6 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item7 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item8 {
+        padding-left: 170px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    .background {
+        border       : 2px none rgba(245, 245, 245, 0.75);
+        margin-bottom: 20px;
+        width        : 1311.65px;
+        height       : 73.35px;
+        left         : 438px;
+        top          : 312.95px;
+        background   : rgba(245, 245, 245, 0.75);
+        box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transform    : rotate(-0.12deg);
+    }
+
+    .background h1 {
+        padding-top: 20px;
+    }
+
+    #cancel {
+        position   : absolute;
+        width      : 120px;
+        height     : 40px;
+        left       : 1180px;
+        padding-top: 5px;
+
+        background   : #000000;
+        border       : #000000;
+        border-radius: 31.5px;
+    }
+
+    #cancel:hover {
+        background-color: #A50000;
+    }
+
+    #cancel span {
+        color: #fff;
+    }
+
+    #payment2 {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 500px;
+        top          : 671px;
+        color        : #fff;
+        border       : #30B900;
+        background   : #30B900;
+        border-radius: 31.5px;
+    }
+}

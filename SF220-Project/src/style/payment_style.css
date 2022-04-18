@@ -1,0 +1,557 @@
+@media screen and (max-width:2560px) {
+
+    /* Side bar */
+    .side-bar {
+        position: absolute;
+        width   : 300px;
+        height  : 1080px;
+        left    : 0px;
+        top     : 0px;
+
+        background: #DC0B00;
+    }
+
+    #logo {
+        position: absolute;
+        width   : 180px;
+        height  : 185.61px;
+        left    : 60px;
+        top     : 30px;
+    }
+
+    #Line1 {
+        position: absolute;
+        width   : 300px;
+        height  : 0px;
+        left    : 0px;
+        top     : 240px;
+
+        border: 2px solid #FFFFFF;
+    }
+
+    #search {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 290px;
+        font-size: 17px;
+
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #quota {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 365px;
+        font-size: 17px;
+
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #payment {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 440px;
+        font-size: 17px;
+
+        background   : #FFFFFF;
+        border       : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #logout {
+        position : absolute;
+        width    : 200px;
+        height   : 50px;
+        left     : 50px;
+        top      : 981px;
+        font-size: 17px;
+
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    /* Top content */
+    .Top-content h1 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 160px;
+        left       : 350px;
+        top        : 0px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 400;
+        font-size  : 96px;
+        line-height: 120px;
+        align-items: center;
+        color      : #FF0000;
+    }
+
+    .Top-content h3 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 120px;
+        left       : 350px;
+        top        : 80px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 600;
+        font-size  : 72px;
+        line-height: 120px;
+        align-items: center;
+        color      : #245564;
+    }
+
+    /* Main content */
+    .mAin-content {
+        position     : absolute;
+        width        : 1100px;
+        height       : 760px;
+        left         : 350px;
+        top          : 280px;
+        background   : rgba(245, 245, 245, 0.75);
+        box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transform    : rotate(-0.12deg);
+    }
+
+    #Item1 {
+        padding-left: 20px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Item2 {
+        padding-left: 205px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Item3 {
+        padding-left: 190px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Item4 {
+        padding-left: 190px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Item5 {
+        padding-left: 20px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Item6 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+
+    }
+
+    #Item7 {
+        padding-left: 190px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Item8 {
+        padding-left: 190px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Item9 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #Line2 {
+        margin-top   : 0px;
+        margin-bottom: -10px;
+        border       : 1.5px solid black;
+        width        : 1095px;
+        height       : 0px;
+        left         : 1px;
+    }
+
+    #total-payment {
+        padding-left: 20px;
+        font-family : 'Mulish';
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #total-credit {
+        padding-left: 590px;
+        font-size   : 25px;
+        font-size   : 'Mulish';
+        font-weight : 400;
+    }
+
+    #total1 {
+        padding-left: 175px;
+        font-family : 'Mulish';
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #total2 {
+        padding-left: 190px;
+        font-family : 'Mulish';
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    #total3 {
+        padding-left: 165px;
+        font-family : 'Mulish';
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
+    /* qr code */
+    #qrcode-1 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 400px;
+        top     : 240px;
+    }
+
+    #qrcode-2 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 400px;
+        top     : 320px;
+    }
+
+    #qrcode-3 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 400px;
+        top     : 380px;
+    }
+
+    #qrcode-4 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 400px;
+        top     : 400px;
+    }
+
+    #qrcode-5 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 400px;
+        top     : 440px;
+    }
+
+    #time-bar {
+        position: absolute;
+        width   : 300px;
+        height  : 50px;
+        left    : 70px;
+        top     : 930px;
+
+        font-size: 30px;
+        color    : #fff000;
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width:2500px) {
+
+    /* Side bar */
+    .side-bar {
+        position  : absolute;
+        width     : 384px;
+        height    : 1080px;
+        left      : 0px;
+        top       : 0px;
+        background: #DC0B00;
+    }
+
+    #logo {
+        position: absolute;
+        width   : 180px;
+        height  : 185.61px;
+        left    : 89px;
+        top     : 26px
+    }
+
+    #Line1 {
+        position: absolute;
+        width   : 384px;
+        height  : 0px;
+        left    : 0px;
+        top     : 240px;
+        border  : 3px solid #FFFFFF;
+    }
+
+    #search {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 280px;
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #quota {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 365px;
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #payment {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 450px;
+        background   : #FFFFFF;
+        border       : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    #logout {
+        position     : absolute;
+        width        : 300px;
+        height       : 50px;
+        left         : 42px;
+        top          : 981px;
+        border       : #FFFFFF;
+        background   : #FFFFFF;
+        border-radius: 31.5px;
+    }
+
+    /* Top content */
+    .Top-content h1 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 160px;
+        left       : 438px;
+        top        : 0px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 400;
+        font-size  : 96px;
+        line-height: 120px;
+        align-items: center;
+        color      : #FF0000;
+    }
+
+    .Top-content h3 {
+        position   : absolute;
+        width      : 1095px;
+        height     : 120px;
+        left       : 438px;
+        top        : 80px;
+        font-family: 'Mulish';
+        font-style : normal;
+        font-weight: 600;
+        font-size  : 72px;
+        line-height: 120px;
+        align-items: center;
+        color      : #245564;
+        ;
+    }
+
+    /* Main content */
+    .mAin-content {
+        position     : absolute;
+        width        : 1311.65px;
+        height       : 743.35px;
+        left         : 438px;
+        top          : 312.95px;
+        background   : rgba(245, 245, 245, 0.75);
+        box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        transform    : rotate(-0.12deg);
+    }
+
+    #Item1 {
+        padding-left: 30px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item2 {
+        padding-left: 205px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item3 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item4 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item5 {
+        padding-left: 30px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item6 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item7 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item8 {
+        padding-left: 210px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Item9 {
+        padding-left: 211px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #Line2 {
+        margin-top: 0px;
+        border    : 2px solid black;
+        width     : 1240px;
+    }
+
+    #total-payment {
+        padding-left: 30px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #total-credit {
+        padding-left: 612px;
+
+        font-size  : 'Mulish';
+        font-weight: 400;
+    }
+
+    #total1 {
+        padding-left: 200px;
+        font-size   : 'Mulish';
+        font-weight : 400;
+    }
+
+    #total2 {
+        padding-left: 208px;
+        font-size   : 'Mulish';
+        font-weight : 400;
+    }
+
+    #total3 {
+        padding-left: 180px;
+        font-family : 'Mulish';
+        font-weight : 400;
+    }
+
+    /* qr code */
+    #qrcode-1 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 500px;
+        top     : 250px;
+    }
+
+    #qrcode-2 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 500px;
+        top     : 290px;
+    }
+
+    #qrcode-3 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 500px;
+        top     : 330px;
+    }
+
+    #qrcode-4 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 500px;
+        top     : 370px;
+    }
+
+    #qrcode-5 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 500px;
+        top     : 410px;
+    }
+}

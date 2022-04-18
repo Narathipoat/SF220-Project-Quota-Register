@@ -1,9 +1,11 @@
 <script>
     import logo from './assets/logo.png'
     import qr from './assets/qrcode.jpg'
-    import { mode, islogin, n } from './data.js';
-    import { sub } from './subject.js';
+    import { mode, islogin} from './data.js';
     import { vicha, list_subject } from './listSJ.js';
+    import { time } from './time.js';
+    import './style/payment_style.css'
+
     function logout() {
         $islogin = false;
         $mode = '';
@@ -14,53 +16,65 @@
         c += 3;
         total += 5400;
     }
+
+    const formatter = new Intl.DateTimeFormat('en', {
+		  hour12: true,
+		  hour: 'numeric',
+		  minute: '2-digit',
+		  second: '2-digit'
+	  });
 </script>
 
 <main>
     <div class="side-bar">
         <img src={logo} alt="logo" id="logo" on:click={() =>$mode = 'main'}>
-        <hr id="line1">
+        <hr id="Line1">
         <button id="search" on:click={()=>$mode = 'search'}>ค้นหารายวิชา</button>
         <button id="quota" on:click={() =>$mode = 'quota'}>ผลการขอโควตา</button>
         <button id="payment" on:click={() =>$mode = 'payment'}>ชำระเงิน</button>
         <button id="logout" on:click={logout}>ออกจากระบบ</button>
+        <span id = "time-bar">{formatter.format($time)}</span>
     </div>
-    <div class="top-content">
+    <div class="Top-content">
         <h1>Thammasat University</h1>
         <h3>ชำระเงิน</h3>
     </div>
-    <div class="main-content">
+    <div class="mAin-content">
        {#each $list_subject as name}
            <h1>
                {#if ($vicha[name].name) == 'TU107' || ($vicha[name].name) == 'TU109'}
-                    <span id='item1'>{$vicha[name].name}</span>
-                    <span id='item2'>{$vicha[name].sec}</span>
-                    <span id='item3' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
-                    <span id='item4'>{$vicha[name].cost}</span>
+                    <span id='Item1'>{$vicha[name].name}</span>
+                    <span id='Item2'>{$vicha[name].sec}</span>
+                    <span id='Item3' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
+                    <span id='Item4'>{$vicha[name].cost}</span>
                 {:else if name == 'SF210'}
-                    <span id='item1'>{$vicha[name].name}</span>
-                    <span id='item9'>{$vicha[name].sec1}</span>
-                    <span id='item3' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
-                    <span id='item4'>{$vicha[name].cost}</span>
+                    <span id='Item1'>{$vicha[name].name}</span>
+                    <span id='Item9'>{$vicha[name].sec1}</span>
+                    <span id='Item3' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
+                    <span id='Item4'>{$vicha[name].cost}</span>
                 {:else if name == 'SF210_2'}
-                    <span id='item1'>{$vicha[name].name}</span>
-                    <span id='item9'>{$vicha[name].sec2}</span>
-                    <span id='item3' use:calculate><b>Credit:</b> {$vicha["SF210"].credit}</span>
-                    <span id='item4'>{$vicha["SF210"].cost}</span>
+                    <span id='Item1'>{$vicha[name].name}</span>
+                    <span id='Item9'>{$vicha[name].sec2}</span>
+                    <span id='Item3' use:calculate><b>Credit:</b> {$vicha["SF210"].credit}</span>
+                    <span id='Item4'>{$vicha["SF210"].cost}</span>
                 {:else}
-                    <span id='item5'>{$vicha[name].name}</span>
-                    <span id='item6'>{$vicha[name].sec}</span>
-                    <span id='item7' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
-                    <span id='item8'>{$vicha[name].cost}</span>
+                    <span id='Item5'>{$vicha[name].name}</span>
+                    <span id='Item6'>{$vicha[name].sec}</span>
+                    <span id='Item7' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
+                    <span id='Item8'>{$vicha[name].cost}</span>
                 {/if}
            </h1>
        {/each}
-        <hr id="line2">
+        <hr id="Line2">
         <h1>
-            <span id="item1"><b>รวม</b></span>
+            <span id="total-payment"><b>รวม</b></span>
             <span id="total-credit"><b>Credit:</b> {c}</span>
             {#if total >= 10000}
-                <span id="total1">{String(total).slice(0, 2)},{String(total).slice(2)} BAHT</span>
+                {#if total > 20000}
+                    <span id="total3">{String(total).slice(0, 2)},{String(total).slice(2)} BAHT</span>
+                {:else} 
+                    <span id="total1">{String(total).slice(0, 2)},{String(total).slice(2)} BAHT</span>
+                {/if}
             {:else if total >= 5400 && total < 10000}
                 <span id="total2">{String(total)[0]},{String(total).slice(1)} BAHT</span>
             {:else}
@@ -81,221 +95,3 @@
         
     </div>
 </main>
-
-<style>
-    /* Side bar */
-    .side-bar {
-        position: absolute;
-        width: 384px;
-        height: 1080px;
-        left: 0px;
-        top: 0px;
-        background: #DC0B00;
-    }
-    #logo {
-        position: absolute;
-        width: 180px;
-        height: 185.61px;
-        left: 89px;
-        top: 26px
-    }
-    #line1 {
-        position: absolute;
-        width: 384px;
-        height: 0px;
-        left: 0px;
-        top: 240px;
-        border: 3px solid #FFFFFF;
-    }
-    #search {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 280px;
-        border: #FFFFFF;
-        background: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    #quota {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 365px;
-        border: #FFFFFF;
-        background: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    #payment {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 450px;
-        background: #FFFFFF;
-        border: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    #logout {
-        position: absolute;
-        width: 300px;
-        height: 50px;
-        left: 42px;
-        top: 981px;
-        border: #FFFFFF;
-        background: #FFFFFF;
-        border-radius: 31.5px;
-    }
-    /* Top content */
-    .top-content h1 {
-        position: absolute;
-        width: 1095px;
-        height: 160px;
-        left: 438px;
-        top: 0px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 96px;
-        line-height: 120px;
-        align-items: center;
-        color: #FF0000;
-    }
-    .top-content h3 {
-        position: absolute;
-        width: 1095px;
-        height: 120px;
-        left: 438px;
-        top: 80px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 72px;
-        line-height: 120px;
-        align-items: center;
-        color: #245564;;
-    }
-    /* Main content */
-    .main-content {
-        position: absolute;
-        width: 1311.65px;
-        height: 743.35px;
-        left: 438px;
-        top: 312.95px;
-        background: rgba(245, 245, 245, 0.75);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        transform: rotate(-0.12deg);
-    }
-    #item1 {
-        padding-left: 30px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item2 {
-        padding-left: 205px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item3 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item4 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item5 {
-        padding-left: 30px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item6 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item7 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item8 {
-        padding-left: 210px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #item9 {
-        padding-left: 211px;
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-    }
-    #line2 {
-        margin-top: 100px;
-        border: 2px solid black;
-    }
-    #total-credit {
-        padding-left: 660px;
-        
-        font-size: 'Mulish';
-        font-weight: 400;
-    }
-    #total1 {
-        padding-left: 200px;
-        font-size: 'Mulish';
-        font-weight: 400;
-    }
-    #total2 {
-        padding-left: 210px;
-        font-size: 'Mulish';
-        font-weight: 400;
-    }
-    /* qr code */
-    #qrcode-1 {
-        position: absolute;
-        width: 276px;
-        height: 220px;
-        left: 500px;
-        top: 320px;
-    }
-    #qrcode-2 {
-        position: absolute;
-        width: 276px;
-        height: 220px;
-        left: 500px;
-        top: 360px;
-    }
-    #qrcode-3 {
-        position: absolute;
-        width: 276px;
-        height: 220px;
-        left: 500px;
-        top: 400px;
-    }
-    #qrcode-4 {
-        position: absolute;
-        width: 276px;
-        height: 220px;
-        left: 500px;
-        top: 440px;
-    }
-    #qrcode-5 {
-        position: absolute;
-        width: 276px;
-        height: 220px;
-        left: 500px;
-        top: 480px;
-    }
-</style>
