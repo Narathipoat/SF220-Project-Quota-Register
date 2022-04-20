@@ -408,6 +408,70 @@
         font-weight : 400;
     }
 
+    #item9 {
+        padding-left: 202.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item10 {
+        padding-left: 213px;
+        font-size: 24px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item11 {
+        padding-left: 201px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item12 {
+        padding-left: 205px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item13 {
+        padding-left: 209px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item14 {
+        padding-left: 217px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item15 {
+        padding-left: 217px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
+    #item16 {
+        padding-left: 217px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
     .background {
         border       : 2px none rgba(245, 245, 245, 0.75);
         margin-bottom: 20px;

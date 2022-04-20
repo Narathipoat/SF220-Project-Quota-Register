@@ -1,8 +1,8 @@
 <script>
     import logo from './assets/logo.png'
     import qr from './assets/qrcode.jpg'
-    import { mode, islogin} from './data.js';
-    import { vicha, list_subject } from './listSJ.js';
+    import { account, mode, islogin, narathip, wasawat, phatthira, yongyut, chaibancha } from './data.js';
+    import { vicha, list_subject } from './listSJ.js'
     import { time } from './time.js';
     import './style/payment_style.css'
 
@@ -10,6 +10,21 @@
         $islogin = false;
         $mode = '';
     }
+
+    let basket = [];
+
+    if ($account == "6410742412"){
+        basket = $narathip;
+    } else if ($account == "6410742735"){ 
+        basket = $wasawat;
+    } else if ($account == "6410742453"){
+        basket = $phatthira;
+    } else if ($account == "6410742693"){
+        basket = $yongyut;
+    } else {
+        basket = $chaibancha;
+    }
+
     let c = 0;
     let total = 0;
     function calculate(node) {
@@ -40,7 +55,7 @@
         <h3>ชำระเงิน</h3>
     </div>
     <div class="mAin-content">
-       {#each $list_subject as name}
+       {#each basket as name}
            <h1>
                {#if ($vicha[name].name) == 'TU107' || ($vicha[name].name) == 'TU109'}
                     <span id='Item1'>{$vicha[name].name}</span>
@@ -81,15 +96,15 @@
                 <span id="total2">{String(total)[0]} BAHT</span>
             {/if}
         </h1>
-        {#if $list_subject.length == 1}
+        {#if basket.length == 1}
             <img src={qr} alt="qrcode" id="qrcode-1">
-        {:else if $list_subject.length == 2}
+        {:else if basket.length == 2}
             <img src={qr} alt="qrcode" id="qrcode-2">
-        {:else if $list_subject.length == 3}
+        {:else if basket.length == 3}
             <img src={qr} alt="qrcode" id="qrcode-3">
-        {:else if $list_subject.length == 4}
+        {:else if basket.length == 4}
             <img src={qr} alt="qrcode" id="qrcode-4">
-        {:else if $list_subject.length == 5}
+        {:else if basket.length == 5}
             <img src={qr} alt="qrcode" id="qrcode-5">
         {/if}
         
