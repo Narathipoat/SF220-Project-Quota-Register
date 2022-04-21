@@ -12,6 +12,8 @@
 {:else}
     {#if $mode == 'main'}
         <Main></Main>
+    {:else if $mode == 'login'}
+        <Login></Login>
     {:else if $mode == 'search'}
         <Search></Search>
     {:else if $mode == 'quota'}

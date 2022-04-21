@@ -185,6 +185,87 @@
         font-size   : 25px;
     }
 
+    /* TU105, TU050 */
+    #item9 {
+        padding-left: 207.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* TU105, TU050 */  
+    #item10 {
+        padding-left: 213px;
+        font-size: 24px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* MA111 */
+    #item11 {
+        padding-left: 205px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* CN311 */
+    #item12 {
+        padding-left: 213px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* SC135 */
+    #item13 {
+        padding-left: 215px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* MA111 */
+    #item14 {
+        padding-left: 213px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* CN311 */
+    #item15 {
+        padding-left: 212.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* SC135 */
+    #item16 {
+        padding-left: 214px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* TU104 */
+    #item17 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* TU104 */
+    #item18 {
+        padding-left: 213px;
+        font-size: 24px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
     .background {
         border       : 2px none rgba(245, 245, 245, 0.75);
         margin-bottom: 20px;
@@ -407,15 +488,15 @@
         font-style  : normal;
         font-weight : 400;
     }
-
+    /* TU105, TU050 */
     #item9 {
-        padding-left: 202.5px;
+        padding-left: 207.5px;
         font-size: 24.5px;
         font-family : 'Mulish';
         font-style  : normal;
         font-weight : 400;
     }
-
+    /* TU105, TU050 */  
     #item10 {
         padding-left: 213px;
         font-size: 24px;
@@ -423,39 +504,39 @@
         font-style  : normal;
         font-weight : 400;
     }
-
+    /* MA111 */
     #item11 {
-        padding-left: 201px;
-        font-size: 24.5px;
-        font-family : 'Mulish';
-        font-style  : normal;
-        font-weight : 400;
-    }
-
-    #item12 {
         padding-left: 205px;
         font-size: 24.5px;
         font-family : 'Mulish';
         font-style  : normal;
         font-weight : 400;
     }
-
+    /* CN311 */
+    #item12 {
+        padding-left: 213px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* SC135 */
     #item13 {
-        padding-left: 209px;
+        padding-left: 215px;
         font-size: 24.5px;
         font-family : 'Mulish';
         font-style  : normal;
         font-weight : 400;
     }
-
+    /* MA111 */
     #item14 {
-        padding-left: 217px;
+        padding-left: 213px;
         font-size: 24.5px;
         font-family : 'Mulish';
         font-style  : normal;
         font-weight : 400;
     }
-
+    /* CN311 */
     #item15 {
         padding-left: 217px;
         font-size: 24.5px;
@@ -463,10 +544,26 @@
         font-style  : normal;
         font-weight : 400;
     }
-
+    /* SC135 */
     #item16 {
-        padding-left: 217px;
+        padding-left: 214px;
         font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* TU104 */
+    #item17 {
+        padding-left: 215px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* TU104 */
+    #item18 {
+        padding-left: 213px;
+        font-size: 24px;
         font-family : 'Mulish';
         font-style  : normal;
         font-weight : 400;

@@ -1,10 +1,10 @@
 import {writable} from 'svelte/store';
 
-let data = {'6410742412' : {name : 'นราธิป เจริญสุข', userid : '6410742412'  , password : '1234'},
-            '6410742230' : {name : 'ชัยบัญชา แรงกลาง', userid : '6410742230', password : '1234'},
-            '6410742453' : {name : 'พัทธ์ธีรา คาร', userid : '6410742453', password : '1234'},
-            '6410742693' : {name : 'ยงยุทธ พรพงศ์สวัสดิ์', userid : '6410742693', password : '1234'},
-            '6410742735' : {name : 'วสวัตติ์ ชีพสมุทร์', userid : '6410742735', password : '1234'},}
+let data = {'6410742412' : {name : 'นราธิป เจริญสุข', userid : '6410742412'  , password : '1234', email: 'student1@gmail.com'},
+            '6410742230' : {name : 'ชัยบัญชา แรงกลาง', userid : '6410742230', password : '1234', email: 'student2@gmail.com'},
+            '6410742453' : {name : 'พัทธ์ธีรา คาร', userid : '6410742453', password : '1234', email: 'student3@gmail.com'},
+            '6410742693' : {name : 'ยงยุทธ พรพงศ์สวัสดิ์', userid : '6410742693', password : '1234', email: 'student4@gmail.com'},
+            '6410742735' : {name : 'วสวัตติ์ ชีพสมุทร์', userid : '6410742735', password : '1234', email: 'student5@gmail.com'}}
 
 let Narathip_Jaroensuk  = []
 let clickN = "no";

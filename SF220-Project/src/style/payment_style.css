@@ -198,6 +198,47 @@
         font-size   : 25px;
     }
 
+    /* TU104 */
+    #Item10 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* TU105, TU050 */
+    #Item11 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* MA111 */
+    #Item12 {
+        padding-left: 200px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* SC135 */
+    #Item13 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* CN311 */
+    #Item14 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+
     #Line2 {
         margin-top   : 0px;
         margin-bottom: -10px;
@@ -281,6 +322,22 @@
         height  : 220px;
         left    : 400px;
         top     : 440px;
+    }
+
+    #qrcode-6 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 400px;
+        top     : 460px;
+    }
+
+    #qrcode-7 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 400px;
+        top     : 500px;
     }
 
     #time-bar {
@@ -475,6 +532,46 @@
         font-style  : normal;
         font-weight : 400;
     }
+    /* TU104 */
+    #Item10 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* TU105, TU050 */
+    #Item11 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* MA111 */
+    #Item12 {
+        padding-left: 200px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* SC135 */
+    #Item13 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
+    /* CN311 */
+    #Item14 {
+        padding-left: 206.5px;
+        font-size: 24.5px;
+        font-family : 'Mulish';
+        font-style  : normal;
+        font-weight : 400;
+    }
 
     #Line2 {
         margin-top: 0px;
@@ -553,5 +650,21 @@
         height  : 220px;
         left    : 500px;
         top     : 410px;
+    }
+
+    #qrcode-6 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 500px;
+        top     : 460px;
+    }
+
+    #qrcode-7 {
+        position: absolute;
+        width   : 276px;
+        height  : 220px;
+        left    : 500px;
+        top     : 500px;
     }
 }

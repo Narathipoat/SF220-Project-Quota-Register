@@ -1,0 +1,267 @@
+@media screen and (max-width:2560px) {
+
+  /* Top bar */
+  .top-bar {
+    background-color: #E40B00;
+    position        : absolute;
+    width           : 100%;
+    height          : 216px;
+    left            : 0px;
+    top             : 0px;
+  }
+
+  /* Text in top bar */
+  .top-bar h1 {
+    color   : #FBFF25;
+    position: absolute;
+    width   : 1070px;
+    height  : 183px;
+    left    : 21%;
+    top     : -10px;
+
+    font-family: 'Mulish';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 96px;
+    line-height: 120px;
+    display    : block;
+    align-items: center;
+    text-align : center;
+  }
+
+  .change_pass {
+    position: absolute;
+    width   : 777px;
+    height  : 471px;
+    left    : 25%;
+    top     : 304px;
+
+    background   : #E40B00;
+    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-size    : 32px;
+    font-style   : 'Mulish';
+  }
+
+  #email {
+    position   : absolute;
+    width      : 38.1px;
+    height     : 50px;
+    left       : 220px;
+    top        : 100px;
+    font-family: 'Mulish';
+    font-weight: bold;
+
+  }
+
+  #email_box {
+    position: absolute;
+    width   : 400px;
+    height  : 70px;
+    left    : 320px;
+    top     : 84px;
+
+    background   : #FFFFFF;
+    border       : #FFFFFF;
+    border-radius: 31.5px;
+    line-height  : 30;
+  }
+
+  #new_pass {
+    position   : absolute;
+    width      : 300px;
+    height     : 50px;
+    left       : 100px;
+    top        : 200px;
+    font-family: 'Mulish';
+    font-weight: bold;
+
+  }
+
+  #new_pass_box {
+    position: absolute;
+    width   : 400px;
+    height  : 70px;
+    left    : 320px;
+    top     : 184px;
+
+    background   : #FFFFFF;
+    border       : #FFFFFF;
+    border-radius: 31.5px;
+    line-height  : 30;
+  }
+
+  #con_pass {
+    position   : absolute;
+    width      : 400px;
+    height     : 50px;
+    left       : 45px;
+    top        : 300px;
+    font-family: 'Mulish';
+    font-weight: bold;
+
+  }
+
+  #con_pass_box {
+    position: absolute;
+    width   : 400px;
+    height  : 70px;
+    left    : 320px;
+    top     : 284px;
+
+    background   : #FFFFFF;
+    border       : #FFFFFF;
+    border-radius: 31.5px;
+    line-height  : 30;
+  }
+
+  #changePass {
+    font-style : 'Mulish';
+    font-size  : 32px;
+    font-weight: bold;
+  }
+
+  #changePassButton {
+    position     : absolute;
+    width        : 400px;
+    height       : 50px;
+    left         : 200px;
+    top          : 400px;
+    border-radius: 31.5px;
+  }
+}
+
+@media screen and (min-width:1920px) and (max-width:2500px) {
+
+  /* Top bar */
+  .top-bar {
+    background-color: #E40B00;
+    position        : absolute;
+    width           : 1920px;
+    height          : 216px;
+    left            : 0px;
+    top             : 0px;
+  }
+
+  /* Text in top bar */
+  .top-bar h1 {
+    color   : #FBFF25;
+    position: absolute;
+    width   : 1070px;
+    height  : 183px;
+    left    : 506px;
+    top     : -10px;
+
+    font-family: 'Mulish';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 96px;
+    line-height: 120px;
+    display    : block;
+    align-items: center;
+    text-align : center;
+  }
+
+  .change_pass {
+    position: absolute;
+    width   : 777px;
+    height  : 471px;
+    left    : 25%;
+    top     : 304px;
+
+    background   : #E40B00;
+    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    font-size    : 32px;
+    font-style   : 'Mulish';
+  }
+
+  #email {
+    position   : absolute;
+    width      : 38.1px;
+    height     : 50px;
+    left       : 220px;
+    top        : 100px;
+    font-family: 'Mulish';
+    font-weight: bold;
+  }
+
+  #email_box {
+    position: absolute;
+    width   : 400px;
+    height  : 70px;
+    left    : 320px;
+    top     : 84px;
+
+    background   : #FFFFFF;
+    border       : #FFFFFF;
+    border-radius: 31.5px;
+    line-height  : 30;
+  }
+
+  #email_box[type="text"] {
+    font-size: 30px;
+  }
+    #new_pass {
+      position   : absolute;
+      width      : 300px;
+      height     : 50px;
+      left       : 100px;
+      top        : 200px;
+      font-family: 'Mulish';
+      font-weight: bold;
+
+    }
+
+    #new_pass_box {
+      position: absolute;
+      width   : 400px;
+      height  : 70px;
+      left    : 320px;
+      top     : 184px;
+
+      background   : #FFFFFF;
+      border       : #FFFFFF;
+      border-radius: 31.5px;
+      line-height  : 30;
+    }
+
+    #con_pass {
+      position   : absolute;
+      width      : 400px;
+      height     : 50px;
+      left       : 45px;
+      top        : 300px;
+      font-family: 'Mulish';
+      font-weight: bold;
+
+    }
+
+    #con_pass_box {
+      position: absolute;
+      width   : 400px;
+      height  : 70px;
+      left    : 320px;
+      top     : 284px;
+
+      background   : #FFFFFF;
+      border       : #FFFFFF;
+      border-radius: 31.5px;
+      line-height  : 30;
+    }
+
+    #changePass {
+      font-style : 'Mulish';
+      font-size  : 32px;
+      font-weight: bold;
+    }
+
+    #changePassButton {
+      position     : absolute;
+      width        : 400px;
+      height       : 50px;
+      left         : 200px;
+      top          : 400px;
+      border-radius: 31.5px;
+    }
+}

@@ -1,6 +1,7 @@
 <script>
     import logo from './assets/logo.png'
     import { account, mode, islogin, narathip, wasawat, phatthira, yongyut, chaibancha, click_N, click_W, click_P, click_C, click_Y } from './data.js';
+    import { current_credit_C, current_credit_N, current_credit_P, current_credit_W, current_credit_Y} from './credit.js'
     import { vicha } from './listSJ.js'
     import { Today, Final } from './date.js'
     import { time } from './time.js';
@@ -14,27 +15,45 @@
     let basket = [];
     let click = "";
 
+    let name_Credit = "";
+
     if ($account == "6410742412"){
         basket = $narathip;
         click = $click_N;
+        name_Credit = "oat";
     } else if ($account == "6410742735"){ 
         basket = $wasawat;
         click = $click_W;
+        name_Credit = "moowan";
     } else if ($account == "6410742453"){
         basket = $phatthira;
         click = $click_P;
+        name_Credit = "kim";
     } else if ($account == "6410742693"){
         basket = $yongyut;
         click = $click_Y;
+        name_Credit = "co";
     } else {
         basket = $chaibancha;
         click = $click_C;
+        name_Credit = "sk";
     }
 
     function remove_item (name){
         const index = basket.indexOf(name);
         if (index > -1) {
             basket.splice(index, 1);
+        }
+        if (name_Credit == "oat") {
+            $current_credit_N -= 3;
+        } else if (name_Credit == "moowan") {
+            $current_credit_W -= 3;
+        } else if (name_Credit == "kim") {
+            $current_credit_P -= 3;
+        } else if (name_Credit == "co") {
+            $current_credit_Y -= 3;
+        } else {
+            $current_credit_C -= 3;
         }
         $vicha[name].num_student += 1;
     }
@@ -43,12 +62,34 @@
         if (index > -1) {
             basket.splice(index, 1);
         }
+        if (name_Credit == "oat") {
+            $current_credit_N -= 3;
+        } else if (name_Credit == "moowan") {
+            $current_credit_W -= 3;
+        } else if (name_Credit == "kim") {
+            $current_credit_P -= 3;
+        } else if (name_Credit == "co") {
+            $current_credit_Y -= 3;
+        } else {
+            $current_credit_C -= 3;
+        }
         $vicha["SF210"].num_student1 += 1;
     }
     function remove_item_sec2 (name){
         const index = basket.indexOf(name);
         if (index > -1) {
             basket.splice(index, 1);
+        }
+        if (name_Credit == "oat") {
+            $current_credit_N -= 3;
+        } else if (name_Credit == "moowan") {
+            $current_credit_W -= 3;
+        } else if (name_Credit == "kim") {
+            $current_credit_P -= 3;
+        } else if (name_Credit == "co") {
+            $current_credit_Y -= 3;
+        } else {
+            $current_credit_C -= 3;
         }
         $vicha["SF210"].num_student2 += 1;
     }
@@ -74,7 +115,10 @@
 		  hour: 'numeric',
 		  minute: '2-digit',
 		  second: '2-digit'
-	  });
+	});
+    console.log(name_Credit);
+    console.log("oat" + " " + $current_credit_N);
+    console.log("kim" + " " + $current_credit_P);
 </script>
 
 <main>
@@ -104,7 +148,7 @@
                                 {#if today < final && click == "no"}
                                     <button id="cancel" on:click={() => {remove_item(name)}}><span>ยกเลิก</span></button>
                                 {/if}
-                            {:else if name == "TU105" || name == "TU050" || name == "TU104"}
+                            {:else if name == "TU105" || name == "TU050"}
                                 <span id='item1'>{$vicha[name].name}</span>
                                 <span id='item9'>{$vicha[name].sec}</span>
                                 <span id='item10'><b>Credit:</b> {$vicha[name].credit} </span>
@@ -136,6 +180,8 @@
                                     <span id='item12'>{$vicha[name].sec}</span>
                                 {:else if name == "SC135"}
                                     <span id='item13'>{$vicha[name].sec}</span>
+                                {:else if name == "TU104"}
+                                    <span id='item17'>{$vicha[name].sec}</span>
                                 {:else}
                                     <span id='item6'>{$vicha[name].sec}</span>
                                 {/if}
@@ -145,6 +191,8 @@
                                     <span id='item15'><b>Credit:</b> {$vicha[name].credit} </span>
                                 {:else if name == "SC135"}
                                     <span id='item16'><b>Credit:</b> {$vicha[name].credit} </span>
+                                {:else if name == "TU104"}
+                                    <span id='item18'><b>Credit:</b> {$vicha[name].credit} </span>
                                 {:else}
                                     <span id='item7'><b>Credit:</b> {$vicha[name].credit} </span>
                                 {/if}

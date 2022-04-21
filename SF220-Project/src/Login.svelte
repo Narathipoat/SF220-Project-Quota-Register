@@ -5,11 +5,13 @@
   import userid from './assets/userid.png'
   // @ts-ignore
   import password from './assets/password.png'
+  import Forgot from './forgot.svelte'
   import { accounts, account, islogin, mode } from './data.js'
   import './style/login_style.css'
 
   let UserID = '';
   let Password = '';
+  let forgot = '';
   
   function checkLogin() {
     if (!(UserID in $accounts) || $accounts[UserID].password != Password){
@@ -22,6 +24,12 @@
       Password = '';
     }
   }
+
+  function forgotPassword(){
+    forgot = 'forgotpass';
+    alert('How could u forgot ur pass?!');
+    console.log("Ready!")
+   }
 </script>
 
 <main>
@@ -51,8 +59,11 @@
     </button>
 
     <!-- Forgot password -->
-    <button id="forget">forget password?</button>
+    <button id="forget" on:click={forgotPassword}>forget password?</button>
   </div>
+    {#if forgot == 'forgotpass'}
+      <Forgot></Forgot>
+    {/if}
 </main>
 
 <style>

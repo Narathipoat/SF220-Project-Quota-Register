@@ -2,7 +2,8 @@
     import logo from './assets/logo.png'
     import searchlogo from './assets/search.png'
     import plus from './assets/plus.png'
-    import { account, mode, islogin, narathip, wasawat, phatthira, yongyut, chaibancha } from './data.js'
+    import { account, mode, islogin, narathip, wasawat, phatthira, yongyut, chaibancha} from './data.js'
+    import { current_credit_C, current_credit_N, current_credit_P, current_credit_W, current_credit_Y} from './credit.js'
     import { vicha} from './listSJ.js'
     import { Today, Final } from './date.js'
     import { time } from './time.js'
@@ -25,6 +26,9 @@
 
     let sec = 'em';
 
+    let name_credit = "";
+    let current_credit = 0;
+
     let today = $Today.getDate();
     let final = $Final.getDate();
 
@@ -32,14 +36,29 @@
 
     if ($account == "6410742412"){
         basket = $narathip;
+        name_credit = "oat";
+        current_credit = $current_credit_N;
+
     } else if ($account == "6410742735"){ 
         basket = $wasawat;
+        name_credit = "moowan";
+        current_credit = $current_credit_W;
+
     } else if ($account == "6410742453"){
         basket = $phatthira;
+        name_credit = "kim";
+        current_credit = $current_credit_P;
+
     } else if ($account == "6410742693"){
         basket = $yongyut;
+        name_credit = "co";
+        current_credit = $current_credit_Y;
+
     } else {
         basket = $chaibancha;
+        name_credit = "sk";
+        current_credit = $current_credit_C;
+
     }
 
     function checkSJ (){
@@ -47,34 +66,84 @@
         check = true;
         before = 'sec';
         sec = "sj" + searchSJ.slice(2);
-        console.log(sec);
     }
     function select_SF210_sec1 () {
         if ($vicha[chooseSJ].num_student1 == 0) {
             alert("ไม่สามารถขอโควตาได้")
         } else {
-            $vicha[chooseSJ].num_student1 -= 1;
-            basket.push(chooseSJ)
-            before1 = 'sec-after';
+            if (current_credit < 21){
+                $vicha[chooseSJ].num_student1 -= 1;
+                basket.push(chooseSJ)
+                before1 = 'sec-after';
+                current_credit += 3
+
+                if (name_credit =="oat") {
+                    $current_credit_N = current_credit;
+                } else if (name_credit == "moowan") {
+                    $current_credit_W = current_credit;
+                } else if (name_credit == "kim") {
+                    $current_credit_P = current_credit;
+                } else if (name_credit == "co") {
+                    $current_credit_Y = current_credit;
+                } else {
+                    $current_credit_C = current_credit;
+                }
+
+            }else {
+                alert("หน่วยกิตของคุณไม่เพียงพอ")
+            }
         }
     }
     function select_SF210_sec2 () {
         if ($vicha[chooseSJ].num_student2 == 0) {
             alert("ไม่สามารถขอโควตาได้")
         } else {
-            $vicha[chooseSJ].num_student2 -= 1;
-            basket.push(sf210_2)
-            before2 = 'sec-after';
+            if (current_credit < 21){
+                $vicha[chooseSJ].num_student2 -= 1;
+                current_credit += 3
+                basket.push(sf210_2)
+                before2 = 'sec-after';
+
+                if (name_credit == "oat") {
+                    $current_credit_N = current_credit;
+                } else if (name_credit == "moowan") {
+                    $current_credit_W = current_credit;
+                } else if (name_credit == "kim") {
+                    $current_credit_P = current_credit;
+                } else if (name_credit == "co") {
+                    $current_credit_Y = current_credit;
+                } else {
+                    $current_credit_C = current_credit;
+                }
+            }else {
+                alert("หน่วยกิตของคุณไม่เพียงพอ")
+            }
         }
     }
     function select_subject () {
         if ($vicha[chooseSJ].num_student == 0) {
             alert("ไม่สามารถขอโควตาได้")
         } else {
-            $vicha[chooseSJ].num_student -= 1;
-            console.log(chooseSJ);
-            basket.push(chooseSJ)
-            before = 'sec-after';
+            if (current_credit < 21){
+                $vicha[chooseSJ].num_student -= 1;
+                current_credit += 3
+                basket.push(chooseSJ)
+                before = 'sec-after';
+
+                if (name_credit == "oat") {
+                    $current_credit_N = current_credit;
+                } else if (name_credit == "moowan") {
+                    $current_credit_W = current_credit;
+                } else if (name_credit == "kim") {
+                    $current_credit_P = current_credit;
+                } else if (name_credit == "co") {
+                    $current_credit_Y = current_credit;
+                } else {
+                    $current_credit_C = current_credit;
+                }
+            }else {
+                alert("หน่วยกิตของคุณไม่เพียงพอ");
+            }
         }
     }
     const formatter = new Intl.DateTimeFormat('en', {
@@ -83,6 +152,10 @@
 		  minute: '2-digit',
 		  second: '2-digit'
 	});
+    
+    console.log(name_credit);
+    console.log("oat" + " " +  $current_credit_N);
+    console.log("kim" + " " + $current_credit_P);
 </script>
 
 
@@ -99,6 +172,9 @@
     <div>
         <h1 id="university">Thammasat University</h1>
         <h3 id="subject">ระบบค้นหาข้อมูลรายวิชา</h3>
+    </div>
+    <div>
+        <span id ="mecredit"> Credit : {current_credit}/22</span>
     </div>
 
 <!-- Search -->

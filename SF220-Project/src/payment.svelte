@@ -74,7 +74,19 @@
                     <span id='Item4'>{$vicha["SF210"].cost}</span>
                 {:else}
                     <span id='Item5'>{$vicha[name].name}</span>
-                    <span id='Item6'>{$vicha[name].sec}</span>
+                    {#if name == "TU104"}
+                        <span id='Item10'>{$vicha[name].sec}</span>
+                    {:else if name == "TU105" || name == "TU050"}
+                        <span id='Item11'>{$vicha[name].sec}</span>
+                    {:else if name == "MA111"}
+                        <span id='Item12'>{$vicha[name].sec}</span>
+                    {:else if name == "SC135"}
+                        <span id='Item13'>{$vicha[name].sec}</span>
+                    {:else if name == "CN311"}
+                        <span id='Item14'>{$vicha[name].sec}</span>
+                    {:else}
+                        <span id='Item6'>{$vicha[name].sec}</span>
+                    {/if}
                     <span id='Item7' use:calculate><b>Credit:</b> {$vicha[name].credit}</span>
                     <span id='Item8'>{$vicha[name].cost}</span>
                 {/if}
@@ -106,6 +118,10 @@
             <img src={qr} alt="qrcode" id="qrcode-4">
         {:else if basket.length == 5}
             <img src={qr} alt="qrcode" id="qrcode-5">
+        {:else if basket.length == 6}
+            <img src={qr} alt="qrcode" id="qrcode-6">
+        {:else if basket.length == 7}
+            <img src={qr} alt="qrcode" id="qrcode-7">
         {/if}
         
     </div>
