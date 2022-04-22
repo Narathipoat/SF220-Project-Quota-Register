@@ -120,7 +120,7 @@
         left    : 350px;
         top     : 312.95px;
     }
-
+    /* TU107 TU109 name*/
     #item1 {
         padding-left: 30px;
         font-family : 'Mulish';
@@ -128,15 +128,15 @@
         font-weight : 400;
         font-size   : 25px;
     }
-
+    /* TU107 TU109 section*/
     #item2 {
-        padding-left: 205px;
+        padding-left: 210px;
         font-family : 'Mulish';
         font-style  : normal;
         font-weight : 400;
         font-size   : 25px;
     }
-
+    /* TU107 TU109 credit*/
     #item3 {
         padding-left: 210px;
         font-family : 'Mulish';
@@ -144,7 +144,7 @@
         font-weight : 400;
         font-size   : 25px;
     }
-
+    /* TU107 TU109 TU105 TU050 num*/
     #item4 {
         padding-left: 90px;
         font-family : 'Mulish';
@@ -152,7 +152,7 @@
         font-weight : 400;
         font-size   : 25px;
     }
-
+    /* SF210 name*/
     #item5 {
         padding-left: 30px;
         font-family : 'Mulish';
@@ -160,7 +160,7 @@
         font-weight : 400;
         font-size   : 25px;
     }
-
+    /* SF210 sectin*/
     #item6 {
         padding-left: 210px;
         font-family : 'Mulish';
@@ -168,7 +168,7 @@
         font-weight : 400;
         font-size   : 25px;
     }
-
+    /* SF210 credit*/
     #item7 {
         padding-left: 210px;
         font-family : 'Mulish';
@@ -176,7 +176,7 @@
         font-weight : 400;
         font-size   : 25px;
     }
-
+    /* SF210 num*/
     #item8 {
         padding-left: 90px;
         font-family : 'Mulish';
@@ -184,18 +184,17 @@
         font-weight : 400;
         font-size   : 25px;
     }
-
-    /* TU105, TU050 */
+    /* TU105 TU050 section*/
     #item9 {
-        padding-left: 207.5px;
+        padding-left: 205px;
         font-size: 24.5px;
         font-family : 'Mulish';
         font-style  : normal;
         font-weight : 400;
     }
-    /* TU105, TU050 */  
+    /* TU105 TU050 credit*/  
     #item10 {
-        padding-left: 213px;
+        padding-left: 210px;
         font-size: 24px;
         font-family : 'Mulish';
         font-style  : normal;
@@ -209,9 +208,9 @@
         font-style  : normal;
         font-weight : 400;
     }
-    /* CN311 */
+    /* CN311 section*/
     #item12 {
-        padding-left: 213px;
+        padding-left: 205px;
         font-size: 24.5px;
         font-family : 'Mulish';
         font-style  : normal;
@@ -233,9 +232,9 @@
         font-style  : normal;
         font-weight : 400;
     }
-    /* CN311 */
+    /* CN311 credit*/
     #item15 {
-        padding-left: 212.5px;
+        padding-left: 211px;
         font-size: 24.5px;
         font-family : 'Mulish';
         font-style  : normal;
@@ -268,7 +267,8 @@
 
     .background {
         border       : 2px none rgba(245, 245, 245, 0.75);
-        margin-bottom: 20px;
+        margin-bottom: 75px;
+        margin-top   : -55px;
         width        : 1100px;
         height       : 73.35px;
         left         : 438px;
