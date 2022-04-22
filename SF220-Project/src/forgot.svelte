@@ -1,7 +1,6 @@
 <script>
   import logo from './assets/logo.png'
   import { accounts, account , mode, islogin } from './data.js'
-  import Login from './login.svelte'
   import './style/forgot_style.css'
 
   let UserEmail = '';
@@ -20,8 +19,14 @@
       mail_name = '6410742453';
     }else if (UserEmail == 'student4@gmail.com'){
       mail_name = '6410742693';
-    }else {
+    }else if (UserEmail == 'student5@gmail.com'){
       mail_name = '6410742735';
+    } else {
+      if (UserEmail == ''){
+        alert('Please Enter Your Email.')
+      } else {
+        alert('Wrong Email');
+      }
     }
     
     if( $accounts[mail_name].email ) {
@@ -30,7 +35,6 @@
       alert('Password Changed!');
       $mode = 'login';
       $islogin = true;
-      check_pass = 'success';
       } 
       else {
       alert('Password Doesn\'t Match')
@@ -38,10 +42,6 @@
       NewPassword1 = '';
       NewPassword2 = '';
       }
-    }
-    else {
-      alert('Wrong Email');
-      UserEmail = '';
     }
   }
 </script>
@@ -65,25 +65,3 @@
   
 </main>
 
-<style>
-  @media screen and (min-width:2560px) and (max-width: 2900px) {
-    /* Logo */
-    #logo {
-      position: absolute;
-      width: 180px;
-      height: 185.61px;
-      margin-left: 10%;
-      margin-top: -12.5px;
-    }
-  }
-@media screen and (min-width:1920px) and (max-width:2500px){
-    /* Logo */
-    #logo {
-      position: absolute;
-      width: 180px;
-      height: 185.61px;
-      margin-left: 16.5%;
-      margin-top: -12.5px;
-    }
-  }
-</style>

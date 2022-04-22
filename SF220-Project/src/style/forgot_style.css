@@ -9,6 +9,14 @@
     left            : 0px;
     top             : 0px;
   }
+  /* Logo */
+  #logo {
+    position: absolute;
+    width: 180px;
+    height: 185.61px;
+    margin-left: 10%;
+    margin-top: -12.5px;
+  }
 
   /* Text in top bar */
   .top-bar h1 {
@@ -64,7 +72,10 @@
     background   : #FFFFFF;
     border       : #FFFFFF;
     border-radius: 31.5px;
-    line-height  : 30;
+  }
+  #email_box[type="text"] {
+    font-size: 20px;
+    padding-left: 30px;
   }
 
   #new_pass {
@@ -90,6 +101,10 @@
     border-radius: 31.5px;
     line-height  : 30;
   }
+  #new_pass_box[type="password"]{
+    font-size: 20px;
+    padding-left: 30px
+  }
 
   #con_pass {
     position   : absolute;
@@ -113,6 +128,10 @@
     border       : #FFFFFF;
     border-radius: 31.5px;
     line-height  : 30;
+  }
+  #con_pass_box[type="password"]{
+    font-size: 20px;
+    padding-left: 30px;
   }
 
   #changePass {
@@ -141,6 +160,14 @@
     height          : 216px;
     left            : 0px;
     top             : 0px;
+  }
+
+  #logo {
+    position: absolute;
+    width: 180px;
+    height: 185.61px;
+    margin-left: 16.5%;
+    margin-top: -12.5px;
   }
 
   /* Text in top bar */
@@ -186,6 +213,7 @@
     font-weight: bold;
   }
 
+
   #email_box {
     position: absolute;
     width   : 400px;
@@ -196,11 +224,10 @@
     background   : #FFFFFF;
     border       : #FFFFFF;
     border-radius: 31.5px;
-    line-height  : 30;
   }
 
   #email_box[type="text"] {
-    font-size: 30px;
+    font-size: 20px;
   }
     #new_pass {
       position   : absolute;
@@ -226,6 +253,11 @@
       line-height  : 30;
     }
 
+    #new_pass_box[type="password"] {
+      font-size: 20px;
+      padding-left: 30px;
+    }
+
     #con_pass {
       position   : absolute;
       width      : 400px;
@@ -248,6 +280,10 @@
       border       : #FFFFFF;
       border-radius: 31.5px;
       line-height  : 30;
+    }
+    #con_pass_box[type="password"] {
+      font-size: 20px;
+      padding-left: 30px;
     }
 
     #changePass {

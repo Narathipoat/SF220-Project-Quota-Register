@@ -27,8 +27,6 @@
 
   function forgotPassword(){
     forgot = 'forgotpass';
-    alert('How could u forgot ur pass?!');
-    console.log("Ready!")
    }
 </script>
 
