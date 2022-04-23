@@ -3,150 +3,169 @@
   /* Top bar */
   .top-bar {
     background-color: #E40B00;
-    position        : absolute;
-    width           : 100%;
-    height          : 216px;
-    left            : 0px;
-    top             : 0px;
+    position: absolute;
+    width: 100%;
+    height: 216px;
+    left: 0px;
+    top: 0px;
   }
   /* Logo */
-  #logo {
+  #logo_forgot {
     position: absolute;
     width: 180px;
     height: 185.61px;
-    margin-left: 10%;
-    margin-top: -12.5px;
+    margin-left: 13.95%;
+    margin-top: 17.5px;
   }
 
   /* Text in top bar */
-  .top-bar h1 {
-    color   : #FBFF25;
+  .top-bar h1{
+    color: #FBFF25;
     position: absolute;
-    width   : 1070px;
-    height  : 183px;
-    left    : 21%;
-    top     : -10px;
-
+    width: 1070px;
+    height: 183px;
+    left: 21%;
+    top: -10px;
+    
     font-family: 'Mulish';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 96px;
+    font-size: 96px;
     line-height: 120px;
-    display    : block;
+    display: block;
     align-items: center;
-    text-align : center;
+    text-align: center;
   }
 
-  .change_pass {
+  .change_pass{
     position: absolute;
-    width   : 777px;
-    height  : 471px;
-    left    : 25%;
-    top     : 304px;
+    width: 777px;
+    height: 471px;
+    left: 25%;
+    top: 304px;
 
-    background   : #E40B00;
-    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #E40B00;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
     border-radius: 30px;
-    font-size    : 32px;
-    font-style   : 'Mulish';
+    font-size: 32px ;
+         
   }
-
-  #email {
-    position   : absolute;
-    width      : 38.1px;
-    height     : 50px;
-    left       : 220px;
-    top        : 100px;
-    font-family: 'Mulish';
-    font-weight: bold;
-
-  }
-
-  #email_box {
+  #citizenID{
     position: absolute;
-    width   : 400px;
-    height  : 70px;
-    left    : 320px;
-    top     : 84px;
-
-    background   : #FFFFFF;
-    border       : #FFFFFF;
-    border-radius: 31.5px;
-  }
-  #email_box[type="text"] {
-    font-size: 20px;
-    padding-left: 30px;
-  }
-
-  #new_pass {
-    position   : absolute;
-    width      : 300px;
-    height     : 50px;
-    left       : 100px;
-    top        : 200px;
+    height: 50px;
+    left: 170px;
+    top: 75px;
     font-family: 'Mulish';
-    font-weight: bold;
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    
   }
-
-  #new_pass_box {
+  #citizenID_box{
     position: absolute;
-    width   : 400px;
-    height  : 70px;
-    left    : 320px;
-    top     : 184px;
+    width: 340px;
+    height: 55px;
+    left: 330px;
+    top: 65px;
 
-    background   : #FFFFFF;
-    border       : #FFFFFF;
+    background: #FFFFFF;
+    border: #FFFFFF;
     border-radius: 31.5px;
-    line-height  : 30;
+    line-height: 30;      
   }
-  #new_pass_box[type="password"]{
+  #citizenID_box[type="text"] {
     font-size: 20px;
-    padding-left: 30px
+    padding-left: 30px; 
   }
-
-  #con_pass {
-    position   : absolute;
-    width      : 400px;
-    height     : 50px;
-    left       : 45px;
-    top        : 300px;
+  #new_pass{
+    position: absolute;
+    height: 50px;
+    left: 119px;
+    top: 172px;
     font-family: 'Mulish';
-    font-weight: bold;
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
   }
-
-  #con_pass_box {
+  #new_pass_box{
     position: absolute;
-    width   : 400px;
-    height  : 70px;
-    left    : 320px;
-    top     : 284px;
+    width: 340px;
+    height: 55px;
+    left: 330px;
+    top: 160px;
 
-    background   : #FFFFFF;
-    border       : #FFFFFF;
+    background: #FFFFFF;
+    border: #FFFFFF;
     border-radius: 31.5px;
-    line-height  : 30;
+    line-height: 30;      
   }
-  #con_pass_box[type="password"]{
+  #new_pass_box[type="password"] {
     font-size: 20px;
-    padding-left: 30px;
+    padding-left: 30px; 
   }
 
-  #changePass {
-    font-style : 'Mulish';
-    font-size  : 32px;
-    font-weight: bold;
+  #con_pass{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 70px;
+    top: 267px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+           
   }
+  #con_pass_box{
+    position: absolute;
+    width: 340px;
+    height: 55px;
+    left: 330px;
+    top: 255px;
 
-  #changePassButton {
-    position     : absolute;
-    width        : 400px;
-    height       : 50px;
-    left         : 200px;
-    top          : 400px;
+    background: #FFFFFF;
+    border: #FFFFFF;
     border-radius: 31.5px;
+    line-height: 30;          
+  }
+  #con_pass_box[type="password"] {
+    font-size: 20px;
+    padding-left: 30px; 
+  }
+  #changePass{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+  }
+  #changePassButton{
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    left: 228.5px;
+    top: 370px;      
+    border-radius: 31.5px;
+    background-color: #241C1C;
+    border: #241C1C;
+  }
+  #BackText{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+  }
+  #BackButton{
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    left: 18px;
+    top: 15px;      
+    border-radius: 31.5px;
+    background-color: #241C1C;
+    border: #241C1C;
   }
 }
 
@@ -155,149 +174,167 @@
   /* Top bar */
   .top-bar {
     background-color: #E40B00;
-    position        : absolute;
-    width           : 1920px;
-    height          : 216px;
-    left            : 0px;
-    top             : 0px;
+    position: absolute;
+    width: 100%;
+    height: 216px;
+    left: 0px;
+    top: 0px;
   }
-
-  #logo {
+  /* Logo */
+  #logo_forgot {
     position: absolute;
     width: 180px;
     height: 185.61px;
-    margin-left: 16.5%;
-    margin-top: -12.5px;
+    margin-left: 20%;
+    margin-top: 1%;
   }
 
   /* Text in top bar */
-  .top-bar h1 {
-    color   : #FBFF25;
+  .top-bar h1{
+    color: #FBFF25;
     position: absolute;
-    width   : 1070px;
-    height  : 183px;
-    left    : 506px;
-    top     : -10px;
-
+    width: 1070px;
+    height: 183px;
+    left: 21%;
+    top: -10px;
+    
     font-family: 'Mulish';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 96px;
+    font-size: 96px;
     line-height: 120px;
-    display    : block;
+    display: block;
     align-items: center;
-    text-align : center;
+    text-align: center;
   }
 
-  .change_pass {
+  .change_pass{
     position: absolute;
-    width   : 777px;
-    height  : 471px;
-    left    : 25%;
-    top     : 304px;
+    width: 777px;
+    height: 471px;
+    left: 572px;
+    top: 304px;
 
-    background   : #E40B00;
-    box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #E40B00;
     border-radius: 30px;
-    font-size    : 32px;
-    font-style   : 'Mulish';
+    font-size: 32px ;
+         
   }
-
-  #email {
-    position   : absolute;
-    width      : 38.1px;
-    height     : 50px;
-    left       : 220px;
-    top        : 100px;
-    font-family: 'Mulish';
-    font-weight: bold;
-  }
-
-
-  #email_box {
+  #citizenID{
     position: absolute;
-    width   : 400px;
-    height  : 70px;
-    left    : 320px;
-    top     : 84px;
+    height: 50px;
+    left: 170px;
+    top: 75px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    
+  }
+  #citizenID_box{
+    position: absolute;
+    width: 340px;
+    height: 55px;
+    left: 330px;
+    top: 65px;
 
-    background   : #FFFFFF;
-    border       : #FFFFFF;
+    background: #FFFFFF;
+    border: #FFFFFF;
     border-radius: 31.5px;
+    line-height: 30;      
   }
-
-  #email_box[type="text"] {
+  #citizenID_box[type="text"] {
     font-size: 20px;
+    padding-left: 30px; 
   }
-    #new_pass {
-      position   : absolute;
-      width      : 300px;
-      height     : 50px;
-      left       : 100px;
-      top        : 200px;
-      font-family: 'Mulish';
-      font-weight: bold;
+  #new_pass{
+    position: absolute;
+    height: 50px;
+    left: 119px;
+    top: 172px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  #new_pass_box{
+    position: absolute;
+    width: 340px;
+    height: 55px;
+    left: 330px;
+    top: 160px;
 
-    }
+    background: #FFFFFF;
+    border: #FFFFFF;
+    border-radius: 31.5px;
+    line-height: 30;      
+  }
+  #new_pass_box[type="password"] {
+    font-size: 20px;
+    padding-left: 30px; 
+  }
 
-    #new_pass_box {
-      position: absolute;
-      width   : 400px;
-      height  : 70px;
-      left    : 320px;
-      top     : 184px;
+  #con_pass{
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    left: 70px;
+    top: 267px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+           
+  }
+  #con_pass_box{
+    position: absolute;
+    width: 340px;
+    height: 55px;
+    left: 330px;
+    top: 255px;
 
-      background   : #FFFFFF;
-      border       : #FFFFFF;
-      border-radius: 31.5px;
-      line-height  : 30;
-    }
-
-    #new_pass_box[type="password"] {
-      font-size: 20px;
-      padding-left: 30px;
-    }
-
-    #con_pass {
-      position   : absolute;
-      width      : 400px;
-      height     : 50px;
-      left       : 45px;
-      top        : 300px;
-      font-family: 'Mulish';
-      font-weight: bold;
-
-    }
-
-    #con_pass_box {
-      position: absolute;
-      width   : 400px;
-      height  : 70px;
-      left    : 320px;
-      top     : 284px;
-
-      background   : #FFFFFF;
-      border       : #FFFFFF;
-      border-radius: 31.5px;
-      line-height  : 30;
-    }
-    #con_pass_box[type="password"] {
-      font-size: 20px;
-      padding-left: 30px;
-    }
-
-    #changePass {
-      font-style : 'Mulish';
-      font-size  : 32px;
-      font-weight: bold;
-    }
-
-    #changePassButton {
-      position     : absolute;
-      width        : 400px;
-      height       : 50px;
-      left         : 200px;
-      top          : 400px;
-      border-radius: 31.5px;
-    }
+    background: #FFFFFF;
+    border: #FFFFFF;
+    border-radius: 31.5px;
+    line-height: 30;          
+  }
+  #con_pass_box[type="password"] {
+    font-size: 20px;
+    padding-left: 30px; 
+  }
+  #changePass{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+  }
+  #changePassButton{
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    left: 228.5px;
+    top: 370px;      
+    border-radius: 31.5px;
+    background-color: #241C1C;
+    border: #241C1C;
+  }
+  #BackText{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+  }
+  #BackButton{
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    left: 18px;
+    top: 15px;      
+    border-radius: 31.5px;
+    background-color: #241C1C;
+    border: #241C1C;
+  }
 }

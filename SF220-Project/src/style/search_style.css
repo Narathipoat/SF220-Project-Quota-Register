@@ -172,63 +172,64 @@
     #sec h2 {
         position    : fixed;
         margin-top  : 1.5%;
+        
         padding-left: 20px;
         font-weight : 300;
     }
 
     #sec h2 #sj210 {
         position   : fixed;
-        margin-left: 24.5%;
+        margin-left: 30%;
     }
 
     #sec h2 #sj220 {
         position   : fixed;
-        margin-left: 22%;
+        margin-left: 28%;
     }
 
     #sec h2 #sj230 {
         position   : fixed;
-        margin-left: 19%;
+        margin-left: 26%;
     }
 
     #sec h2 #sj107 {
         position   : fixed;
-        margin-left: 22%;
+        margin-left: 31%;
     }
 
     #sec h2 #sj109 {
         position   : fixed;
-        margin-left: 16.5%;
+        margin-left: 26%;
     }
 
     #sec h2 #sj105 {
         position   : fixed;
-        margin-left: 22%;
+        margin-left: 31.5%;
     }
 
     #sec h2 #sj050 {
         position   : fixed;
-        margin-left: 27%;
+        margin-left: 36%;
     }
 
     #sec h2 #sj111 {
         position   : fixed;
-        margin-left: 27%;
+        margin-left: 36.5%;
     }
 
     #sec h2 #sj104 {
         position   : fixed;
-        margin-left: 19%;
+        margin-left: 27%;
     }
 
     #sec h2 #sj135 {
         position   : fixed;
-        margin-left: 39%;
+        margin-left: 47%;
     }
 
     #sec h2 #sj311 {
         position   : fixed;
-        margin-left: 39%;
+        margin-left: 45.5%;
     }
 
     #plus {
@@ -236,7 +237,7 @@
         width      : 44px;
         height     : 48px;
         margin-top : -1%;
-        margin-left: 3%;
+        margin-left: 2%;
     }
 
     #detail {
@@ -269,7 +270,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 16.3%;
+        margin-left: 31.5%;
 
         color: #000000;
 
@@ -282,7 +283,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 15.3%;
+        margin-left: 30.65%;
 
         color: #000000;
 
@@ -295,7 +296,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 15.4%;
+        margin-left: 30.85%;
 
         color: #000000;
 
@@ -308,7 +309,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 16%;
+        margin-left: 31.3%;
 
         color: #000000;
 
@@ -321,7 +322,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 16%;
+        margin-left: 31.25%;
 
         color: #000000;
 
@@ -334,7 +335,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 15.8%;
+        margin-left: 31.25%;
 
         color: #000000;
 
@@ -347,7 +348,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 15.8%;
+        margin-left: 31.3%;
 
         color: #000000;
 
@@ -360,7 +361,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 8.5%;
+        margin-left: 23.35%;
 
         color: #000000;
 
@@ -373,7 +374,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 15.2%;
+        margin-left: 30.6%;
 
         color: #000000;
 
@@ -386,7 +387,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 16%;
+        margin-left: 31.25%;
 
         color: #000000;
 
@@ -399,7 +400,7 @@
         font-weight: 400;
         font-size  : 26px;
         line-height: 45px;
-        margin-left: 17%;
+        margin-left: 32.3%;
 
         color: #000000;
 
@@ -425,7 +426,7 @@
         font-weight: 400;
         font-size  : 25px;
         line-height: 45px;
-        margin-left: 6.75%;
+        margin-left: 21.75%;
 
         color: #000000;
 
@@ -452,57 +453,57 @@
 
     #sec-after h2 #sj210 {
         position   : fixed;
-        margin-left: 24.5%;
+        margin-left: 31%;
     }
 
     #sec-after h2 #sj220 {
         position   : fixed;
-        margin-left: 22%;
+        margin-left: 29%;
     }
 
     #sec-after h2 #sj230 {
         position   : fixed;
-        margin-left: 19%;
+        margin-left: 26%;
     }
 
     #sec-after h2 #sj107 {
         position   : fixed;
-        margin-left: 22%;
+        margin-left: 31%;
     }
 
     #sec-after h2 #sj109 {
         position   : fixed;
-        margin-left: 16.5%;
+        margin-left: 26%;
     }
 
     #sec-after h2 #sj105 {
         position   : fixed;
-        margin-left: 22%;
+        margin-left: 31.5%;
     }
 
     #sec-after h2 #sj050 {
         position   : fixed;
-        margin-left: 27%;
+        margin-left: 36%;
     }
 
     #sec-after h2 #sj111 {
         position   : fixed;
-        margin-left: 27%;
+        margin-left: 36%;
     }
 
     #sec-after h2 #sj104 {
         position   : fixed;
-        margin-left: 19%;
+        margin-left: 28%;
     }
 
     #sec-after h2 #sj135 {
         position   : fixed;
-        margin-left: 39%;
+        margin-left: 47%;
     }
 
     #sec-after h2 #sj311 {
         position   : fixed;
-        margin-left: 39%;
+        margin-left: 45.5%;
     }
 
     #detail-after {
@@ -517,11 +518,14 @@
     }
 
     #mecredit {
-        font-family: 'Mulish';
-        font-style : normal;
-        font-weight: 400;
-        font-size  : 25px;
-        margin-left : 86%;
+      font-family: 'Mulish';
+      font-style : normal;
+      font-weight: 400;
+      font-size  : 25px;
+      margin-top : 17%;
+      margin-left : 85%;
+      position   : absolute;
+      mix-blend-mode: normal;      
     }
 }
 

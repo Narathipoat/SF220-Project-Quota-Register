@@ -71,19 +71,19 @@
       position: absolute;
       width: 180px;
       height: 185.61px;
-      margin-left: 10%;
-      margin-top: -12.5px;
+      margin-left: 14%;
+      margin-top: 1%;
     }
 
   }
-@media screen and (min-width:1920px) and (max-width:2500px) and (max-height:1200px){
+@media screen and (min-width:1920px) and (max-width:2500px){
     /* Logo */
     #logo {
       position: absolute;
       width: 180px;
       height: 185.61px;
-      margin-left: 16.5%;
-      margin-top: -12.5px;
+      margin-left: 20%;
+      margin-top: 1%;
     }
   }
 </style>

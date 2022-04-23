@@ -283,6 +283,13 @@
         font-size   : 25px;
     }
 
+    #total4 {
+        padding-left: 164px;
+        font-family : 'Mulish';
+        font-weight : 400;
+        font-size   : 25px;
+    }
+
     /* qr code */
     #qrcode-1 {
         position: absolute;
@@ -609,6 +616,13 @@
         padding-left: 180px;
         font-family : 'Mulish';
         font-weight : 400;
+    }
+
+    #total4 {
+        padding-left: 164px;
+        font-family : 'Mulish';
+        font-weight : 400;
+        font-size   : 25px;
     }
 
     /* qr code */

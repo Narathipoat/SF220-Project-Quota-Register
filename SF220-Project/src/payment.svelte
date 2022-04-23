@@ -99,6 +99,8 @@
             {#if total >= 10000}
                 {#if total > 20000}
                     <span id="total3">{String(total).slice(0, 2)},{String(total).slice(2)} BAHT</span>
+                {:else if total >= 37800}
+                    <span id="total4">{String(total).slice(0, 2)},{String(total).slice(2)} BAHT</span>
                 {:else} 
                     <span id="total1">{String(total).slice(0, 2)},{String(total).slice(2)} BAHT</span>
                 {/if}
