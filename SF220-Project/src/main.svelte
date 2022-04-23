@@ -19,7 +19,7 @@
 
 <main>
     <div class="side-bar">
-        <img src={logo} alt="logo" id="logo">
+        <img src={logo} alt="logo" id="LoGo">
         <hr id="line">
         <button id="search" on:click={()=>$mode = 'search'}>ค้นหารายวิชา</button>
         <button id="quota" on:click={() =>$mode = 'quota'}>ผลการขอโควตา</button>
@@ -34,24 +34,3 @@
         <span id="name">คุณ {$accounts[$account].name} : {$accounts[$account].userid}</span>
     </div>
 </main>
-
-<style>
-    @media screen and (max-width:2560px) {
-    #logo {
-        position: absolute;
-        width: 180px;
-        height: 185.61px;
-        margin-left: 0px;
-        top: 30px;
-    }
-}
-@media screen and (min-width:1920px) and (max-width:2500px) {
-    #logo {
-        position: absolute;
-        width: 180px;
-        height: 185.61px;
-        margin-left: 0px;
-        top: 26px
-    }
-}
-</style>

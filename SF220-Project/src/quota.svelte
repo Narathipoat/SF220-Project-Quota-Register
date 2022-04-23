@@ -123,7 +123,7 @@
 
 <main>
     <div class="side-bar">
-        <img src={logo} alt="logo" id="logo" on:click={() =>$mode = 'main'}>
+        <img src={logo} alt="logo" id="loGo" on:click={() =>$mode = 'main'}>
         <hr id="line1">
         <button id="search" on:click={()=>$mode = 'search'}>ค้นหารายวิชา</button>
         <button id="quota" on:click={() =>$mode = 'quota'}>ผลการขอโควตา</button>

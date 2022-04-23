@@ -11,6 +11,14 @@
         background: #DC0B00;
     }
 
+    #LoGo {
+        position: absolute;
+        width: 180px;
+        height: 185.61px;
+        margin-left: 18%;
+        margin-top: 15%;
+    }
+
     #line {
         position: absolute;
         width   : 300px;
@@ -165,6 +173,14 @@
         top     : 0px;
 
         background: #DC0B00;
+    }
+
+    #LoGo {
+        position: absolute;
+        width: 180px;
+        height: 185.61px;
+        margin-left: 23.3%;
+        margin-top: 7%;
     }
 
     #line {
