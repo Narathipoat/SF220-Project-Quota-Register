@@ -1,2 +1,2 @@
 # Website for register and request quota from the university.
-This is a project for me and my team by use Svelte framework of JavaScript for develop.
+This is a project by me and my team to build a website using the Svelte framework of JavaScript for development.
